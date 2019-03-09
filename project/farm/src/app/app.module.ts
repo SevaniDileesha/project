@@ -17,6 +17,8 @@ import { UserService } from './shared/user.service';
 //other
 import { AuthGuard } from './auth/auth.guard';
 import { AuthInterceptor } from './auth/auth.interceptor';
+import { AppRoutingModule } from './app-routing.module';
+import { UiModule } from './ui/ui.module';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,9 @@ import { AuthInterceptor } from './auth/auth.interceptor';
     BrowserModule,
     FormsModule,
     RouterModule.forRoot(appRoutes),
-    HttpClientModule
+    HttpClientModule,
+    AppRoutingModule,
+    UiModule
   ],
   providers: [{
     provide: HTTP_INTERCEPTORS,
