@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import{NgForm} from '@angular/forms';
 
-import { UserService } from '../../shared/user.service'
+import { UserService } from '../shared/user.service'
 import { formArrayNameProvider } from '@angular/forms/src/directives/reactive_directives/form_group_name';
 
 @Component({
