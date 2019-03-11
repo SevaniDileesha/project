@@ -1,4 +1,7 @@
-
+<div class="wrapper">
+<div>
+  <img src ="/assets/img/users.png" id = "icon" alt="User Icon" />
+</div>
 <form #signUpForm="ngForm" (ngSubmit)="signUpForm.valid && onSubmit(signUpForm)">
   
   <input type="text" #fullName="ngModel" [(ngModel)]="userService.selectedUser.fullName" name="fullName" placeholder="Full Name"
@@ -30,6 +33,7 @@
 
 <div class="success" *ngIf="showSuccessMessage">
   saved successfully
+</div>
 </div>
 
 <div class="alert" *ngIf="serverErrorMessages">
