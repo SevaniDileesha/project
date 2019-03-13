@@ -20,6 +20,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { UiModule } from './ui/ui.module';
 import { HomeComponent } from './home/home.component';
 import { ContactusComponent } from './contactus/contactus.component';
+import { AdminComponent } from './admin/admin.component';
 
 const appRoutes: Routes =  [
   {path:'', component: HomeComponent},
@@ -36,7 +37,8 @@ const appRoutes: Routes =  [
     UserProfileComponent,
     SignInComponent,
     HomeComponent,
-    ContactusComponent
+    ContactusComponent,
+    AdminComponent
   ],
   imports: [
     BrowserModule,
