@@ -9,6 +9,7 @@ import { AuthGuard } from './auth/auth.guard';
 
 import { HomeComponent } from './home/home.component';
 import { ContactusComponent } from './contactus/contactus.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 const routes: Routes = [
   {
     path: '',
@@ -32,6 +33,9 @@ const routes: Routes = [
   path: 'userprofile',
   component: UserProfileComponent
 },
+{path:'dashboard',
+ component:DashboardComponent
+}
   
 ];
 
