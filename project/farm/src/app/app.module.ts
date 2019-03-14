@@ -21,13 +21,15 @@ import { UiModule } from './ui/ui.module';
 import { HomeComponent } from './home/home.component';
 import { ContactusComponent } from './contactus/contactus.component';
 import { AdminComponent } from './admin/admin.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 const appRoutes: Routes =  [
   {path:'', component: HomeComponent},
   {path:'contact', component: ContactusComponent},
   {path:'login', component: SignInComponent},
   {path:'signup', component: SignUpComponent},
-  {path:'userprofile', component:UserProfileComponent }
+  {path:'userprofile', component:UserProfileComponent },
+  {path:'dashboard', component:DashboardComponent }
 ]
 
 @NgModule({
@@ -38,7 +40,8 @@ const appRoutes: Routes =  [
     SignInComponent,
     HomeComponent,
     ContactusComponent,
-    AdminComponent
+    AdminComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
