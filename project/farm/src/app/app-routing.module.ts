@@ -21,7 +21,8 @@ const routes: Routes = [
  },
  {
   path: 'login',
-  component: ContactusComponent
+  //component: ContactusComponent
+  component: SignInComponent
 },
 {
   path: 'signup',
