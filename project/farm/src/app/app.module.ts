@@ -22,6 +22,8 @@ import { HomeComponent } from './home/home.component';
 import { ContactusComponent } from './contactus/contactus.component';
 import { AdminComponent } from './admin/admin.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { CheckoutComponent } from './checkout/checkout.component';
+import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
 
 const appRoutes: Routes =  [
   {path:'', component: HomeComponent},
@@ -29,7 +31,10 @@ const appRoutes: Routes =  [
   {path:'login', component: SignInComponent},
   {path:'signup', component: SignUpComponent},
   {path:'userprofile', component:UserProfileComponent },
-  {path:'dashboard', component:DashboardComponent }
+  {path:'dashboard', component:DashboardComponent },
+  {path:'checkout', component:CheckoutComponent },
+  {path:'cart', component:ShoppingCartComponent },
+  {path:'home', component: HomeComponent}
 ]
 
 @NgModule({
@@ -41,7 +46,9 @@ const appRoutes: Routes =  [
     HomeComponent,
     ContactusComponent,
     AdminComponent,
-    DashboardComponent
+    DashboardComponent,
+    CheckoutComponent,
+    ShoppingCartComponent
   ],
   imports: [
     BrowserModule,
