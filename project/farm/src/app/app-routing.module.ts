@@ -9,6 +9,7 @@ import { AuthGuard } from './auth/auth.guard';
 
 import { HomeComponent } from './home/home.component';
 import { ContactusComponent } from './contactus/contactus.component';
+import { CheckoutComponent } from './checkout/checkout.component';
 const routes: Routes = [
   {
     path: '',
@@ -31,6 +32,10 @@ const routes: Routes = [
 {
   path: 'userprofile',
   component: UserProfileComponent
+},
+{
+  path: 'checkout',
+  component: CheckoutComponent 
 },
   
 ];
