@@ -4,12 +4,31 @@ require('./config/passportConfig');
 
 const express = require('express');
 const bodyParser = require('body-parser');
+const exphbs = require('express-handlebars');
+const path = require('path');
+const nodemailer = require('nodemailer');
 const cors = require('cors');
 const passport = require('passport');
 
 const rtsIndex = require('./routes/index.router');
 
 var app = express();
+
+//view engine setup
+app.engine('handlebars', exphbs());
+app.set('view engine', 'handlebars');
+
+// Static folder
+app.use('/server', express.static(path.join(__dirname, 'server')));
+
+//Body Parser Middleware
+app.use(bodyParser.urlencoded({ extended: false }));
+
+app.get('/', (req, res) => {
+    res.send('Hello');
+});
+
+//app.listen(2000, () => console.log('Server started...'));
 
 // middleware
 app.use(bodyParser.json());
