@@ -24,9 +24,11 @@ import { AdminComponent } from './admin/admin.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
+import { AdminSignupComponent } from './admin-signup/admin-signup.component';
 
 const appRoutes: Routes =  [
   {path:'', component: HomeComponent},
+  {path:'admin', component: AdminComponent},
   {path:'contact', component: ContactusComponent},
   {path:'login', component: SignInComponent},
   {path:'signup', component: SignUpComponent},
@@ -34,6 +36,7 @@ const appRoutes: Routes =  [
   {path:'dashboard', component:DashboardComponent },
   {path:'checkout', component:CheckoutComponent },
   {path:'cart', component:ShoppingCartComponent },
+  {path:'adminsiginup', component:AdminSignupComponent },
   {path:'home', component: HomeComponent}
 ]
 
@@ -48,7 +51,8 @@ const appRoutes: Routes =  [
     AdminComponent,
     DashboardComponent,
     CheckoutComponent,
-    ShoppingCartComponent
+    ShoppingCartComponent,
+    AdminSignupComponent
   ],
   imports: [
     BrowserModule,
