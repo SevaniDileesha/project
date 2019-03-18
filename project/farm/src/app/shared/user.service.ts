@@ -13,8 +13,8 @@ export class UserService {
   selectedUser: User = {
     fullName: '',
     email: '',
-    password: '',
-    role:''
+    password: ''
+    //role:''
   }; 
 
   noAuthHeader = { headers: new HttpHeaders({ 'NoAuth': 'True' }) };

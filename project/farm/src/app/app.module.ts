@@ -23,8 +23,6 @@ import { ContactusComponent } from './contactus/contactus.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 
 import { AdminComponent } from './admin/admin.component';
-import { AdminComponent } from './admin/admin.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
 import { AdminSignupComponent } from './admin-signup/admin-signup.component';
@@ -36,7 +34,6 @@ const appRoutes: Routes =  [
   {path:'login', component: SignInComponent},
   {path:'signup', component: SignUpComponent},
   {path:'userprofile', component:UserProfileComponent },
-  {path:'dashboard', component:DashboardComponent }
   {path:'dashboard', component:DashboardComponent },
   {path:'checkout', component:CheckoutComponent },
   {path:'cart', component:ShoppingCartComponent },
@@ -52,8 +49,6 @@ const appRoutes: Routes =  [
     SignInComponent,
     HomeComponent,
     ContactusComponent,
-    DashboardComponent,
-    AdminComponent
     AdminComponent,
     DashboardComponent,
     CheckoutComponent,

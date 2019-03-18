@@ -9,7 +9,7 @@ import { AuthGuard } from './auth/auth.guard';
 
 import { HomeComponent } from './home/home.component';
 import { AdminComponent } from './admin/admin.component';
-import { ContactusComponent } from './contactus/contactus.component';
+//import { ContactusComponent } from './contactus/contactus.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { AdminSignupComponent } from './admin-signup/admin-signup.component';
@@ -32,7 +32,7 @@ const routes: Routes = [
  {
   path: 'adminsiginup',
   component: AdminSignupComponent
-},
+ },
  {
   path: 'login',
   //component: ContactusComponent
@@ -48,7 +48,7 @@ const routes: Routes = [
 },
 {path:'dashboard',
  component:DashboardComponent
-}
+},
 {
   path: 'checkout',
   component: CheckoutComponent 
