@@ -12,11 +12,8 @@ export class HeaderComponent implements OnInit {
   constructor(private userService: UserService, private router: Router) { }
 
   ngOnInit() {
-   
+    
   }
   
-  onLogout(){
-    this.userService.deleteToken();
-    this.router.navigate(['/login']);
-  }
+  
 }
