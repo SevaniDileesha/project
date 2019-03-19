@@ -24,6 +24,13 @@
     <div *ngIf="signUpForm.submitted && !lastName.valid">
       <label class="validation-message">This field is required.</label>
     </div>
+
+    <input type="text" #telephone="ngModel" [(ngModel)]="userService.selectedUser.telephone" name="telephone" placeholder="Telephone No"
+    required [ngClass]="{'invalid-textbox' :signUpForm.submitted && !telephone.valid }">
+  
+    <div *ngIf="signUpForm.submitted && !telephone.valid">
+      <label class="validation-message">This field is required.</label>
+    </div>
   
     <input type="text" #email="ngModel" [(ngModel)]="userService.selectedUser.email" name="email" placeholder="Email"
     required [pattern]="emailRegex"  [ngClass]="{'invalid-textbox' :signUpForm.submitted && !email.valid }">
