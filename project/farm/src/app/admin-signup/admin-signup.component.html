@@ -25,13 +25,23 @@
       <label class="validation-message">This field is required.</label>
     </div>
 
-    <input type="text" #telephone="ngModel" [(ngModel)]="userService.selectedUser.telephone" name="telephone" placeholder="Telephone No"
+    <input type="text"  minlength="10"  #telephone="ngModel" [(ngModel)]="userService.selectedUser.telephone" name="telephone" placeholder="Telephone No"
     required [ngClass]="{'invalid-textbox' :signUpForm.submitted && !telephone.valid }">
   
     <div *ngIf="signUpForm.submitted && !telephone.valid">
       <label class="validation-message">This field is required.</label>
+      <label *ngIf="telephone.errors.minlength" class="validation-message">Enter atleast 10 characters.</label>
+
     </div>
   
+    <input type="text" #address="ngModel" [(ngModel)]="userService.selectedUser.address" name="address" placeholder="Address"
+    required [ngClass]="{'invalid-textbox' :signUpForm.submitted && !address.valid }">
+  
+    <div *ngIf="signUpForm.submitted && !telephone.valid">
+      <label class="validation-message">This field is required.</label>
+      
+    </div>
+
     <input type="text" #email="ngModel" [(ngModel)]="userService.selectedUser.email" name="email" placeholder="Email"
     required [pattern]="emailRegex"  [ngClass]="{'invalid-textbox' :signUpForm.submitted && !email.valid }">
   
