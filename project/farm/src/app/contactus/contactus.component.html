@@ -1,3 +1,5 @@
+
+
 <div class="row">
     <div class="col-md-12">
       <h1 style="text-align:center">Contact Us</h1>
@@ -30,8 +32,10 @@
         </form>
     </div>
     <div class="col-md-6">
-        <div class="card text-white bg-warning o-hidden h-50">
+        <div class="card text-white bg-danger o-hidden h-50">
             <div class="card-body">
+                <h3>Business Address</h3>
+                <hr>
                 <div class="mr-5">No.175....</div>
                 <div class="mr-5">0715900909</div>
                 <div class="mr-5">harshani.ur@gmail.com</div>
@@ -39,9 +43,9 @@
         </div>
         <br>
         <div class="card text-white bg-danger o-hidden h-50">
-                <div class="card-body">
-                    <div class="mapouter"><div class="gmap_canvas"><iframe width="200px" height="200" id="gmap_canvas" src="https://maps.google.com/maps?q=jeewaka%20pharmacy%20ruhunupura&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.embedgooglemap.net">embedgooglemap.net</a></div><style>.mapouter{text-align:right;height:200px;width:200px;}.gmap_canvas {overflow:hidden;background:none!important;height:200px;width:200px;}</style></div>
-                </div>
+            <agm-map [latitude]="lat" [longitude]="lng">
+                <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+              </agm-map>
             </div>
 
     </div>
