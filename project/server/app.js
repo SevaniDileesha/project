@@ -28,7 +28,7 @@ app.get('/', (req, res) => {
     res.send('Hello');
 });
 
-app.listen(2000, () => console.log('Server started...'));
+//app.listen(2000, () => console.log('Server started...'));
 
 // middleware
 app.use(bodyParser.json());

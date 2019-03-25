@@ -14,6 +14,7 @@ export class UserService {
     fullName: '',
     email: '',
     password: ''
+    //role:''
   }; 
 
   noAuthHeader = { headers: new HttpHeaders({ 'NoAuth': 'True' }) };
