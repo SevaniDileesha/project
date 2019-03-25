@@ -26,6 +26,7 @@ import { AdminComponent } from './admin/admin.component';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
 import { AdminSignupComponent } from './admin-signup/admin-signup.component';
+import { AboutusComponent } from './aboutus/aboutus.component';
 
 const appRoutes: Routes =  [
   {path:'', component: HomeComponent},
@@ -53,7 +54,8 @@ const appRoutes: Routes =  [
     DashboardComponent,
     CheckoutComponent,
     ShoppingCartComponent,
-    AdminSignupComponent
+    AdminSignupComponent,
+    AboutusComponent
   ],
   imports: [
     BrowserModule,
