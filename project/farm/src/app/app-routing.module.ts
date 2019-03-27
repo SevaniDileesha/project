@@ -30,6 +30,10 @@ const routes: Routes = [
     component: SignInComponent
  },
  {
+  path: 'home',
+  component: HomeComponent
+},
+ {
   path: 'adminsiginup',
   component: AdminSignupComponent
  },
