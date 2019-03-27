@@ -30,6 +30,7 @@ import { AdminSignupComponent } from './admin-signup/admin-signup.component';
 import { DeliverDetailsComponent } from './deliver-details/deliver-details.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { AboutusComponent } from './aboutus/aboutus.component';
 
 
 @NgModule({
@@ -47,7 +48,8 @@ import { FooterComponent } from './footer/footer.component';
     AdminSignupComponent,
     DeliverDetailsComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    AboutusComponent
   ],
   imports: [
     BrowserModule,
