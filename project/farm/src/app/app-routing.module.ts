@@ -8,7 +8,12 @@ import { UserProfileComponent } from './user-profile/user-profile.component';
 import { AuthGuard } from './auth/auth.guard';
 
 import { HomeComponent } from './home/home.component';
-import { ContactusComponent } from './contactus/contactus.component';
+import { AdminComponent } from './admin/admin.component';
+//import { ContactusComponent } from './contactus/contactus.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { CheckoutComponent } from './checkout/checkout.component';
+import { AdminSignupComponent } from './admin-signup/admin-signup.component';
+
 const routes: Routes = [
   {
     path: '',
@@ -16,8 +21,17 @@ const routes: Routes = [
     component: HomeComponent
   },
   {
+    path: 'admin',
+    pathMatch: 'full',
+    component: AdminComponent
+  },
+  {
     path: 'contact',
     component: SignInComponent
+ },
+ {
+  path: 'adminsiginup',
+  component: AdminSignupComponent
  },
  {
   path: 'login',
@@ -31,6 +45,13 @@ const routes: Routes = [
 {
   path: 'userprofile',
   component: UserProfileComponent
+},
+{path:'dashboard',
+ component:DashboardComponent
+},
+{
+  path: 'checkout',
+  component: CheckoutComponent 
 },
   
 ];
