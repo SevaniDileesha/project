@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { AgmCoreModule } from '@agm/core';
+//import { AgmCoreModule } from '@agm/core';
 
 import{FormsModule} from '@angular/forms';//registration form
 import{RouterModule,Routes} from '@angular/router';
@@ -58,11 +58,10 @@ import { AboutusComponent } from './aboutus/aboutus.component';
     FormsModule,
     RouterModule,
     HttpClientModule,
-    AppRoutingModule,
-    AppRoutingModule,
-    AgmCoreModule.forRoot({
-      apiKey: 'YOUR_KEY'
-    })
+    AppRoutingModule
+    //AgmCoreModule.forRoot({
+      //apiKey: 'YOUR_KEY'
+    //})
   ],
   providers: [{
     provide: HTTP_INTERCEPTORS,
