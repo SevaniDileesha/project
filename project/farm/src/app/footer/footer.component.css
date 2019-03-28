@@ -1,0 +1,10 @@
+.page-footer{
+    //position: fixed;
+    background-color:#7283a7;
+    border-color: #337ab7;
+    color: #FFFFFF;
+    height: 300px;
+    bottom: 0;
+    width: 100%;
+  
+   }

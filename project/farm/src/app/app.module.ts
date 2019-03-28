@@ -6,6 +6,7 @@ import { AgmCoreModule } from '@agm/core';
 import{FormsModule} from '@angular/forms';//registration form
 import{RouterModule,Routes} from '@angular/router';
 import{HttpClientModule,HTTP_INTERCEPTORS}from '@angular/common/http';
+
 //component
 import { AppComponent } from './app.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
@@ -29,21 +30,11 @@ import { AdminComponent } from './admin/admin.component';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
 import { AdminSignupComponent } from './admin-signup/admin-signup.component';
+import { DeliverDetailsComponent } from './deliver-details/deliver-details.component';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
 
-const appRoutes: Routes =  [
-  {path:'', component: HomeComponent},
-  {path:'admin', component: AdminComponent},
-  {path:'contact', component: ContactusComponent},
-  {path:'login', component: SignInComponent},
-  {path:'signup', component: SignUpComponent},
-  {path:'userprofile', component:UserProfileComponent },
-  {path:'dashboard', component:DashboardComponent },
-  {path:'checkout', component:CheckoutComponent },
-  {path:'cart', component:ShoppingCartComponent },
-  {path:'adminsiginup', component:AdminSignupComponent },
-  {path:'home', component: HomeComponent}
-]
 
 @NgModule({
   declarations: [
@@ -58,13 +49,15 @@ const appRoutes: Routes =  [
     CheckoutComponent,
     ShoppingCartComponent,
     AdminSignupComponent,
+    DeliverDetailsComponent,
+    HeaderComponent,
+    FooterComponent,
     AboutusComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    CommonModule,
-    RouterModule.forRoot(appRoutes),
+    RouterModule,
     HttpClientModule,
     AppRoutingModule,
     UiModule,
