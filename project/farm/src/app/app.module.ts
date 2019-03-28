@@ -18,7 +18,6 @@ import { UserService } from './shared/user.service';
 import { AuthGuard } from './auth/auth.guard';
 import { AuthInterceptor } from './auth/auth.interceptor';
 import { AppRoutingModule } from './app-routing.module';
-import { UiModule } from './ui/ui.module';
 import { HomeComponent } from './home/home.component';
 import { ContactusComponent } from './contactus/contactus.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
@@ -56,8 +55,7 @@ import { AboutusComponent } from './aboutus/aboutus.component';
     FormsModule,
     RouterModule,
     HttpClientModule,
-    AppRoutingModule,
-    UiModule
+    AppRoutingModule
   ],
   providers: [{
     provide: HTTP_INTERCEPTORS,
