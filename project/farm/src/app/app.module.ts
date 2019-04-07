@@ -33,6 +33,7 @@ import { DeliverDetailsComponent } from './deliver-details/deliver-details.compo
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -58,7 +59,8 @@ import { AboutusComponent } from './aboutus/aboutus.component';
     FormsModule,
     RouterModule,
     HttpClientModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
     //AgmCoreModule.forRoot({
       //apiKey: 'YOUR_KEY'
     //})

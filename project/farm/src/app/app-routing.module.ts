@@ -13,6 +13,7 @@ import { ContactusComponent } from './contactus/contactus.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { AdminSignupComponent } from './admin-signup/admin-signup.component';
+import { DeliverDetailsComponent } from './deliver-details/deliver-details.component';
 
 const routes: Routes = [
   {
@@ -56,6 +57,10 @@ const routes: Routes = [
 {
   path: 'checkout',
   component: CheckoutComponent 
+},
+{
+  path: 'delivarydetails',
+  component: DeliverDetailsComponent 
 },
   
 ];
