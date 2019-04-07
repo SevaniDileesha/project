@@ -1,0 +1,63 @@
+<div class="card">
+  <div class="card-body">
+    <form [formGroup]="angForm" novalidate>
+      <div class="form-group">
+        <label class="col-md-4">Recipient's Name</label>
+        <input type="text" class="form-control" formControlName="recipient_name" #recipient_name />
+      </div>
+      <div *ngIf="angForm.controls['recipient_name'].invalid && (angForm.controls['recipient_name'].dirty || angForm.controls['recipient_name'].touched)" class="alert alert-danger">
+        <div *ngIf="angForm.controls['recipient_name'].errors.required">
+          Recipient's Name is required.
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-md-4">Recipient's Phone </label>
+        <input type="text" class="form-control" formControlName="recipient_phone" #recipient_phone />
+      </div>
+      <div *ngIf="angForm.controls['recipient_phone'].invalid && (angForm.controls['recipient_phone'].dirty || angForm.controls['recipient_phone'].touched)" class="alert alert-danger">
+        <div *ngIf="angForm.controls['recipient_phone'].errors.required">
+          Recipient's Phone is required.
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-md-4">Delivery Address </label>
+        <input type="text" class="form-control" formControlName="delivery_address" #delivery_address/>
+      </div>
+      <div *ngIf="angForm.controls['delivery_address'].invalid && (angForm.controls['delivery_address'].dirty || angForm.controls['delivery_address'].touched)" class="alert alert-danger">
+        <div *ngIf="angForm.controls['delivery_address'].errors.required">
+          Delivery Address  is required.
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-md-4">Delivery city</label>
+        <input type="text" class="form-control" formControlName="delivery_city" #delivery_city/>
+      </div>
+      <div *ngIf="angForm.controls['delivery_city'].invalid && (angForm.controls['delivery_city'].dirty || angForm.controls['delivery_city'].touched)" class="alert alert-danger">
+        <div *ngIf="angForm.controls['delivery_city'].errors.required">
+          Delivery city is required.
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-md-4">Location Type </label>
+        <input type="text" class="form-control" formControlName="location_type" #location_type/>
+      </div>
+      <div *ngIf="angForm.controls['location_type'].invalid && (angForm.controls['location_type'].dirty || angForm.controls['location_type'].touched)" class="alert alert-danger">
+        <div *ngIf="angForm.controls['location_type'].errors.required">
+          Location Type is required.
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-md-4">Delivery Date </label>
+        <input type="text" class="form-control" formControlName="delivery_date" #delivery_date/>
+      </div>
+      <div *ngIf="angForm.controls['delivery_date'].invalid && (angForm.controls['delivery_date'].dirty || angForm.controls['delivery_date'].touched)" class="alert alert-danger">
+        <div *ngIf="angForm.controls['delivery_date'].errors.required">
+          Delivery Date is required.
+        </div>
+      </div>
+      <div class="form-group">
+        <button type="submit" [disabled]="angForm.pristine || angForm.invalid" class="btn btn-primary">Continue</button>
+      </div>
+    </form>
+  </div>
+</div>

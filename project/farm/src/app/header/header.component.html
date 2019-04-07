@@ -1,16 +1,17 @@
-<!--<nav class="navbar navbar-dark bg-dark mb-5">-->
 <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
   <a class="navbar-brand" href="http://localhost:4200">Dream Flowers</a>
   <div class="navbar-expand mr-auto">
+    <div class="container-fluid">
     <div class="navbar-nav">
-      <a class="nav-item nav-link active" href="http://localhost:4200/home">Home</a>
-      <a class="nav-item nav-link " href="http://localhost:4200/contact">Contact</a>
-      <a class="nav-item nav-link" href="http://localhost:4200/login">Login</a>
-      <a class="nav-item nav-link" href="http://localhost:4200/signup">Register</a>
-     
       
+      <a class="nav-item" routerLink="/home" class="nav-link" routerLinkActive="active">Home</a>
+      <a class="nav-item" routerLink="/contact" class="nav-link" routerLinkActive="active">Contact</a>
+      <a class="nav-item" routerLink="/login" class="nav-link" routerLinkActive="active">Login</a>
+      <a class="nav-item" routerLink="/signup" class="nav-link" routerLinkActive="active">Register</a>
+
     
       
+    </div>
     </div>
   </div>
   <div class="navbar-expand ml-auto navbar-nav">
@@ -27,3 +28,9 @@
     </div>
   </div>
 </nav>
+
+<!--<app-header></app-header>
+<div class="container">
+  <ng-content></ng-content>
+</div>
+<app-footer></app-footer>-->

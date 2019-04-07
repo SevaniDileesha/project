@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { Routes } from '@angular/router';
+import { Routes, RouterModule } from '@angular/router';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { SignInComponent } from './sign-in/sign-in.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
@@ -9,10 +9,11 @@ import { AuthGuard } from './auth/auth.guard';
 
 import { HomeComponent } from './home/home.component';
 import { AdminComponent } from './admin/admin.component';
-//import { ContactusComponent } from './contactus/contactus.component';
+import { ContactusComponent } from './contactus/contactus.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { AdminSignupComponent } from './admin-signup/admin-signup.component';
+import { DeliverDetailsComponent } from './deliver-details/deliver-details.component';
 
 const routes: Routes = [
   {
@@ -27,8 +28,12 @@ const routes: Routes = [
   },
   {
     path: 'contact',
-    component: SignInComponent
+    component: ContactusComponent
  },
+ {
+  path: 'home',
+  component: HomeComponent
+},
  {
   path: 'adminsiginup',
   component: AdminSignupComponent
@@ -53,13 +58,15 @@ const routes: Routes = [
   path: 'checkout',
   component: CheckoutComponent 
 },
+{
+  path: 'delivarydetails',
+  component: DeliverDetailsComponent 
+},
   
 ];
 
 @NgModule({
-  declarations: [],
-  imports: [
-    CommonModule
-  ]
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule]
 })
 export class AppRoutingModule { }
