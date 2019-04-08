@@ -1,6 +1,7 @@
 require('./config/config');
 require('./models/db');
 require('./config/passportConfig');
+var employeeController = require('./controllers/employeeController.js');
 
 const express = require('express');
 const bodyParser = require('body-parser');
@@ -47,6 +48,7 @@ app.use((err, req, res, next) => {
         console.log(err);
     }
 });
+app.use('/employees', employeeController);
 
 // start server
 app.listen(process.env.PORT, () => console.log(`Server started at port : ${process.env.PORT}`));
