@@ -34,6 +34,7 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { PlantsComponent } from './plants/plants.component';
 
 
 @NgModule({
@@ -52,7 +53,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     DeliverDetailsComponent,
     HeaderComponent,
     FooterComponent,
-    AboutusComponent
+    AboutusComponent,
+    PlantsComponent
   ],
   imports: [
     BrowserModule,

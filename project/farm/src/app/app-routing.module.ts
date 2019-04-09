@@ -9,6 +9,7 @@ import { AuthGuard } from './auth/auth.guard';
 
 import { HomeComponent } from './home/home.component';
 import { AdminComponent } from './admin/admin.component';
+import { PlantsComponent } from './plants/plants.component';
 import { ContactusComponent } from './contactus/contactus.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { CheckoutComponent } from './checkout/checkout.component';
@@ -37,6 +38,10 @@ const routes: Routes = [
  {
   path: 'adminsiginup',
   component: AdminSignupComponent
+ },
+ {
+  path: 'plants',
+  component: PlantsComponent
  },
  {
   path: 'login',
