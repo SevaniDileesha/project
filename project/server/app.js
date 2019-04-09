@@ -2,6 +2,7 @@ require('./config/config');
 require('./models/db');
 require('./config/passportConfig');
 var employeeController = require('./controllers/employeeController.js');
+var plantControllers = require('./controllers/plantControllers.js');
 
 const express = require('express');
 const bodyParser = require('body-parser');
@@ -49,6 +50,7 @@ app.use((err, req, res, next) => {
     }
 });
 app.use('/employees', employeeController);
+app.use('/plants', plantControllers);
 
 // start server
 app.listen(process.env.PORT, () => console.log(`Server started at port : ${process.env.PORT}`));
