@@ -34,6 +34,8 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import {DeliverService } from './deliver/deliver.service';
+
 
 
 @NgModule({
@@ -69,7 +71,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     provide: HTTP_INTERCEPTORS,
     useClass: AuthInterceptor,
     multi: true
-  },AuthGuard,UserService],
+  },AuthGuard,UserService,DeliverService],
   // declarations:[AppComponent],
   bootstrap: [AppComponent]
 })

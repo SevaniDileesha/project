@@ -56,7 +56,7 @@
         </div>
       </div>
       <div class="form-group">
-        <button type="submit" [disabled]="angForm.pristine || angForm.invalid" class="btn btn-primary">Continue</button>
+        <button (click)="addDeliverDetail(recipient_name.value, recipient_phone.value, delivery_address.value,delivery_city.value,location_type.value,delivery_date.value)" [disabled]="angForm.pristine || angForm.invalid" class="btn btn-primary">Continue</button>
       </div>
     </form>
   </div>

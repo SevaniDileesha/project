@@ -17,20 +17,20 @@ export class UserService {
     //role:''
   }; 
 
-  noAuthHeader = { headers: new HttpHeaders({ 'NoAuth': 'True' }) };
+  noAuthHeader = { headers: new HttpHeaders({ 'NoAuth': 'True' }) };//
 
   constructor(private http:HttpClient){}
 
     postUser(user:User){
-     return  this.http.post(environment.apiBaseUrl+'/register',user,this.noAuthHeader);
+     return  this.http.post(environment.apiBaseUrl1+'/register',user,this.noAuthHeader);
     }
   
     login(authCredentials) {
-      return this.http.post(environment.apiBaseUrl + '/authenticate', authCredentials,this.noAuthHeader);
+      return this.http.post(environment.apiBaseUrl1 + '/authenticate', authCredentials,this.noAuthHeader);
     }
  
     getUserProfile() {
-      return this.http.get(environment.apiBaseUrl + '/userProfile');
+      return this.http.get(environment.apiBaseUrl1 + '/userProfile');
     }
 
     //Helper Methods

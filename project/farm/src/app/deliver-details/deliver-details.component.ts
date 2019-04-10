@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup,  FormBuilder,  Validators } from '@angular/forms';
+import {DeliverService } from '../deliver/deliver.service';
 
 
 @Component({
@@ -10,7 +11,7 @@ import { FormGroup,  FormBuilder,  Validators } from '@angular/forms';
 export class DeliverDetailsComponent implements OnInit {
 
   angForm: FormGroup;
-  constructor(private fb: FormBuilder) {
+  constructor(private fb: FormBuilder,private ds: DeliverService) {
     this.createForm();
   }
 
@@ -23,6 +24,10 @@ export class DeliverDetailsComponent implements OnInit {
       location_type: ['', Validators.required ],
       delivery_date: ['', Validators.required ]
     });
+  }
+
+  addDeliverDetail(recipient_name, recipient_phone, delivery_address,delivery_city,location_type, delivery_date) {
+    this.ds.addDeliverDetail(recipient_name, recipient_phone, delivery_address,delivery_city,location_type, delivery_date);
   }
   ngOnInit() {
   }
