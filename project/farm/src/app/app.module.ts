@@ -36,6 +36,7 @@ import { AboutusComponent } from './aboutus/aboutus.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import {DeliverService } from './deliver/deliver.service';
 
+import { PlantsComponent } from './plants/plants.component';
 
 
 @NgModule({
@@ -54,7 +55,8 @@ import {DeliverService } from './deliver/deliver.service';
     DeliverDetailsComponent,
     HeaderComponent,
     FooterComponent,
-    AboutusComponent
+    AboutusComponent,
+    PlantsComponent
   ],
   imports: [
     BrowserModule,
