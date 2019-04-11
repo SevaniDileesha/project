@@ -25,9 +25,9 @@ router.get('/:id', (req, res) => {
 router.post('/', (req, res) => {
     var pln = new Plants({
         name: req.body.name,
-        position: req.body.position,
-        office: req.body.office,
-        salary: req.body.salary,
+        discription: req.body.discription,
+        quantity: req.body.quantity,
+        use: req.body.use,
     });
     pln.save((err, doc) => {
         if (!err) { res.send(doc); }
@@ -41,9 +41,9 @@ router.put('/:id', (req, res) => {
 
     var pln = {
         name: req.body.name,
-        position: req.body.position,
-        office: req.body.office,
-        salary: req.body.salary,
+        discription: req.body.discription,
+        quantity: req.body.quantity,
+        use: req.body.use,
     };
     Plants.findByIdAndUpdate(req.params.id, { $set: pln }, { new: true }, (err, doc) => {
         if (!err) { res.send(doc); }

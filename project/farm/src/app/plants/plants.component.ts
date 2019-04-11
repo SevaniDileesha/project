@@ -27,9 +27,9 @@ export class PlantsComponent implements OnInit {
     this.plantsService.selectedPlants = {
       _id: "",
       name: "",
-      position: "",
-      office: "",
-      salary: null
+      discription: "",
+      quantity: null,
+      use: ""
     }
   }
 
