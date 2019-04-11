@@ -1,5 +1,4 @@
 
-<h1>Manage Plants</h1>
 <div class="row">
   <div class="col s12">
     <div class="card1">
@@ -7,31 +6,33 @@
         <div class="row">
           <div class="col s5">
             <form #plantsForm="ngForm" (ngSubmit)="onSubmit(plantsForm)">
+                <h3 class="title text-center">Manage Plants</h3>
+                <h5 class ="text-center">Only you can manage the plants. You must enter the valid details.</h5>
+                <br>
+                <br>
               <input type="hidden" name="_id" #_id="ngModel" [(ngModel)]="plantsService.selectedPlants._id">
               <div class="row">
                 <div class="input-field col s12">
-                  <input type="text" name="name" #name="ngModel" [(ngModel)]="plantsService.selectedPlants.name" placeholder="Enter full name" required>
-                  <label>Name :
-                    <label class="red-text">*</label>
-                  </label>
+                  <input type="text" name="name" #name="ngModel" [(ngModel)]="plantsService.selectedPlants.name" placeholder="Plant Name" required>
+                 
                 </div>
               </div>
               <div class="row">
                 <div class="input-field col s12">
-                  <input type="text" name="position" #name="ngModel" [(ngModel)]="plantsService.selectedPlants.position" placeholder="Eg : Snr. Developer">
-                  <label>Position :</label>
+                  <input type="text" name="discription" #name="ngModel" [(ngModel)]="plantsService.selectedPlants.discription" placeholder="Description">
+               
                 </div>
               </div>
               <div class="row">
                 <div class="input-field col s12">
-                  <input type="text" name="office" #name="ngModel" [(ngModel)]="plantsService.selectedPlants.office" placeholder="Enter office location">
-                  <label>Office :</label>
+                  <input type="text" name="quantity" #name="ngModel" [(ngModel)]="plantsService.selectedPlants.quantity" placeholder="Quantity">
+                
                 </div>
               </div>
               <div class="row">
                 <div class="input-field col s12">
-                  <input type="text" name="salary" #name="ngModel" [(ngModel)]="plantsService.selectedPlants.salary" placeholder="Salary per annum">
-                  <label>Salary :</label>
+                  <input type="text" name="use" #name="ngModel" [(ngModel)]="plantsService.selectedPlants.use" placeholder="Plant Use">
+          
                 </div>
               </div>
               <div class="row">
@@ -47,15 +48,15 @@
                   <thead>
                     <tr>
                       <th>Name</th>
-                      <th>Position</th>
-                      <th>Office</th>
+                      <th>Discription</th>
+                      <th>Quantity</th>
                       <th></th>
                     </tr>
                   </thead>
                   <tr *ngFor="let pln of plantsService.plants">
                     <td>{{pln.name}}</td>
-                    <td>{{pln.position}}</td>
-                    <td>{{pln.office}}</td>
+                    <td>{{pln.discription}}</td>
+                    <td>{{pln.quantity}}</td>
                     <td>
                         <a class="action-btn" (click)="onEdit(pln)">
                           <i class="material-icons">edit</i>
