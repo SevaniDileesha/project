@@ -430,6 +430,11 @@ div.card1{
   height: 800px;
 }
 
+div.card3{
+  background-color : #083045;
+  border-radius: 8px;
+  height: 450px;
+}
 
 
 .vl {
