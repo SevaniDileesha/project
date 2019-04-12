@@ -15,6 +15,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { AdminSignupComponent } from './admin-signup/admin-signup.component';
 import { DeliverDetailsComponent } from './deliver-details/deliver-details.component';
+import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
 
 const routes: Routes = [
   {
@@ -67,7 +68,15 @@ const routes: Routes = [
   path: 'deliverdetails',
   component: DeliverDetailsComponent 
 },
-  
+{
+  path: 'cart',
+  component: DeliverDetailsComponent 
+},
+{
+  path: 'shoppingcart',
+  component: ShoppingCartComponent
+
+},
 ];
 
 @NgModule({
