@@ -1,7 +1,7 @@
 export class Plants {
     _id: string;
     name: string;
-    position: string;
-    office: string;
-    salary: number;
+    discription: string;
+    quantity: number;
+    use: string;
 }

@@ -26,9 +26,11 @@ export class AdminSignupComponent implements OnInit {
     this.employeeService.selectedEmployee = {
       _id: "",
       name: "",
-      position: "",
-      office: "",
-      salary: null
+      email: "",
+      address: "",
+      contact: null,
+      gender:"",
+      nic:null
     }
   }
 

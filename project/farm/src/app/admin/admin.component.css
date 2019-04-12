@@ -1,0 +1,11 @@
+
+mdb-accordion-item-head.active a h5 {
+  color: red !important;
+  background-color: yellow !important;
+}
+
+
+mdb-accordion-item-body a.active {
+  color: red !important;
+  background-color: yellow !important;
+}
