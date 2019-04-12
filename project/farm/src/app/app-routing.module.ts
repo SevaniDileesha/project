@@ -16,6 +16,7 @@ import { CheckoutComponent } from './checkout/checkout.component';
 import { AdminSignupComponent } from './admin-signup/admin-signup.component';
 import { DeliverDetailsComponent } from './deliver-details/deliver-details.component';
 import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
+import { AboutusComponent } from './aboutus/aboutus.component';
 
 const routes: Routes = [
   {
@@ -77,6 +78,11 @@ const routes: Routes = [
   component: ShoppingCartComponent
 
 },
+{
+  path: 'aboutus',
+  component: AboutusComponent
+
+}
 ];
 
 @NgModule({

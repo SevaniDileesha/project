@@ -1,87 +1,92 @@
-<div class="container">
-    <h4 class="justify-content-between align-items-center mb-3">
-      <span class="text-muted">Your cart</span>
-      <span class="badge badge-secondary badge-pill">{{totalitems}}</span>
-    </h4>
-      <div class="row">
-        <div class="col-sm-12 col-md-10 col-md-offset-1">
-          <table class="table table-hover">
-            <thead>
-              <tr>
-                <th >Product</th>
-                <th class="text-center">Price</th>
-                <th> </th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr *ngFor="let item of items; let i = index " >
-                <td class="col-sm-8 col-md-6">
-                  <div class="media">
-                    <a class="thumbnail pull-left" href="#">
-                      <img class="media-object" src="{{item.img}}" style="width: 72px; height: 72px;"> </a>
-                    <div class="media-body">
-                      <h4 class="media-heading ">{{item.name}}</h4>
-                    </div>
-                  </div>
-                </td>
-                <td class="col-sm-1 col-md-1 text-center">
-                  <strong>$350</strong>
-                </td>
-                <td class="col-sm-1 col-md-1">
-                  <button  class="btn btn-danger btn-sm"(click)="removeProduct(i)">
-                    <span class="glyphicon glyphicon-remove"></span> Remove
-                  </button>
-                </td>
-              </tr>
-              <tr>
-                <td>   </td>
-                <td>
-                  <h5>Subtotal</h5>
-                </td>
-                <td class="text-right">
-                  <h5>
-                    <strong>${{subtotal}}</strong>
-                  </h5>
-                </td>
-              </tr>
-              <tr>
-                <td>   </td>
-                <td>
-                  <h5>Estimated shipping</h5>
-                </td>
-                <td class="text-right">
-                  <h5>
-                    <strong>$6.94</strong>
-                  </h5>
-                </td>
-              </tr>
-              <tr>
-                <td>   </td>
-                <td>
-                  <h3>Total</h3>
-                </td>
-                <td class="text-right">
-                  <h3>
-                    <strong>${{total}}</strong>
-                  </h3>
-                </td>
-              </tr>
-              <tr>
-                <td>   </td>
-                <td>
-                  <button  class="btn btn-default" *ngIf="authService.loggedIn()" [routerLink]="['/products']">
-                    <span class="glyphicon glyphicon-shopping-cart"></span> Continue Shopping
-                  </button>
-                </td>
-                <td>
-                  <button type="button" class="btn btn-success" *ngIf="authService.itemslenth()"(click)="checkout()">
-                    Checkout
-                    <span class="glyphicon glyphicon-play"></span>
-                  </button>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Cart</title>
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">	
+	
+
+</head>
+<body >
+  <br>
+  <br>
+	<section class="bg-title-page p-t-40 p-b-50 flex-col-c-m" style="background-image: url(../../../assets/img/cartheader.jpg);">
+		<h2 class="l-text2 t-center">
+			Cart
+		</h2>
+	</section>
+
+  <!-- Cart -->
+  <br>
+	<section class="cart bgwhite p-t-70 p-b-100">
+		<div class="container">
+			<!-- Cart item -->
+			<div class="container-table-cart pos-relative">
+				<div class="wrap-table-shopping-cart bgwhite">
+					<table class="table-shopping-cart">
+						<tr class="table-head">
+							<th class="column-1"></th>
+							<th class="column-2">Product</th>
+							<th class="column-3">Price</th>
+							<th class="column-4 p-l-70">Quantity</th>
+							<th class="column-5">Total</th>
+						</tr>
+
+						<tr class="table-row">
+							<td class="column-1">
+								<div class="cart-img-product b-rad-4 o-f-hidden">
+									<img src="../../../assets/img/cart1.jpg" alt="IMG-PRODUCT">
+								</div>
+							</td>
+							<td class="column-2">Men Tshirt</td>
+							<td class="column-3">$36.00</td>
+							<td class="column-4">
+								<div class="flex-w bo5 of-hidden w-size17">
+									<button class="btn-num-product-down color1 flex-c-m size7 bg8 eff2">
+										<i class="fs-12 fa fa-minus" aria-hidden="true"></i>
+									</button>
+
+									<input class="size8 m-text18 t-center num-product" type="number" name="num-product1" value="1">
+
+									<button class="btn-num-product-up color1 flex-c-m size7 bg8 eff2">
+										<i class="fs-12 fa fa-plus" aria-hidden="true"></i>
+									</button>
+								</div>
+							</td>
+							<td class="column-5">$36.00</td>
+						</tr>
+
+						<tr class="table-row">
+							<td class="column-1">
+								<div class="cart-img-product b-rad-4 o-f-hidden">
+									<img src="../../../assets/img/cart2.jpg" alt="IMG-PRODUCT">
+								</div>
+							</td>
+							<td class="column-2">Mug Adventure</td>
+							<td class="column-3">$16.00</td>
+							<td class="column-4">
+								<div class="flex-w bo5 of-hidden w-size17">
+									<button class="btn-num-product-down color1 flex-c-m size7 bg8 eff2">
+										<i class="fs-12 fa fa-minus" aria-hidden="true"></i>
+									</button>
+
+									<input class="size8 m-text18 t-center num-product" type="number" name="num-product2" value="1">
+
+									<button class="btn-num-product-up color1 flex-c-m size7 bg8 eff2">
+										<i class="fs-12 fa fa-plus" aria-hidden="true"></i>
+									</button>
+								</div>
+							</td>
+							<td class="column-5">$16.00</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+
+
+		</div>
+	</section>
+
+
+</body>
+</html>
