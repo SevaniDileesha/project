@@ -52,6 +52,13 @@
                   
                     </div>
                   </div>
+
+                  <div class="row">
+                    <div class="input-field col s12">
+                      <input type="text" name="password" #name="ngModel" [(ngModel)]="employeeService.selectedEmployee.password" placeholder="Password">
+                  
+                    </div>
+                  </div>
               <div class="row">
                 <div class="input-field col s12">
                     <button class="btn btn-custom right" type="button" (click)="resetForm(employeeForm)">Reset</button>

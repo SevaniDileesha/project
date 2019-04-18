@@ -62,6 +62,8 @@ import {FlashMessagesModule} from 'angular2-flash-messages';
     AboutusComponent,
     PlantsComponent,
     //AddProductComponent
+    //AddProductComponent
+
   ],
   imports: [
     BrowserModule,

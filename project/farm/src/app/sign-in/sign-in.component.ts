@@ -3,15 +3,18 @@ import { NgForm } from "@angular/forms";
 import { Router } from "@angular/router";
 
 import { UserService } from '../shared/user.service';
+import { EmployeeService } from '../employee/employee.service';
+import { Employee } from '../employee/employee.model';
 
 @Component({
   selector: 'app-sign-in',
   templateUrl: './sign-in.component.html',
-  styleUrls: ['./sign-in.component.css']
+  styleUrls: ['./sign-in.component.css'],
+  providers: [EmployeeService]
 })
 export class SignInComponent implements OnInit {
 
-  constructor(private userService: UserService,private router : Router) { }
+  constructor(private userService: UserService,private router : Router,private employeeService: EmployeeService) { }
 
   model ={
     email :'',
@@ -29,6 +32,15 @@ export class SignInComponent implements OnInit {
       res => {
         this.userService.setToken(res['token']);
         this.router.navigateByUrl('/home');
+      },
+      err => {
+        this.serverErrorMessages = err.error.message;
+      }
+    );
+    this.employeeService.login(form.value).subscribe(
+      res => {
+        //this.employeeService.setToken(res['token']);
+        this.router.navigateByUrl('/workers');
       },
       err => {
         this.serverErrorMessages = err.error.message;

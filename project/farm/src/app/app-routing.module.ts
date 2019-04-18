@@ -19,6 +19,7 @@ import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
 //import { AddProductComponent } from './add-product/add-product.component';
 
+
 const routes: Routes = [
   {
     path: '',
@@ -83,6 +84,10 @@ const routes: Routes = [
   path: 'aboutus',
   component: AboutusComponent
 
+},
+{
+  path: 'add-product',
+  component: AddProductComponent
 }
 ];
 
