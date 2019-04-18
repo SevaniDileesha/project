@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+/*import { Component, OnInit } from '@angular/core';
 import { ValidateService } from '../services/validate.service'
 import { FlashMessagesService } from 'angular2-flash-messages';
 import { AuthService } from "../services/auth.service";
@@ -23,7 +23,7 @@ export class AddProductComponent implements OnInit {
   ngOnInit() {
   }
 
-  /*onProductSubmit() {
+  onProductSubmit() {
     const product = {
       name: this.name,
       img: this.img,
@@ -55,7 +55,7 @@ export class AddProductComponent implements OnInit {
 
   }
 
-}*/
-
-
 }
+
+
+}*/

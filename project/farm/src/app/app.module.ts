@@ -37,10 +37,10 @@ import { ReactiveFormsModule } from '@angular/forms';
 import {DeliverService } from './deliver/deliver.service';
 
 import { PlantsComponent } from './plants/plants.component';
-import { AddProductComponent } from './add-product/add-product.component';
-import { ValidateService } from './services/validate.service'
+//import { AddProductComponent } from './add-product/add-product.component';
+//import { ValidateService } from './services/validate.service'
 import {FlashMessagesModule} from 'angular2-flash-messages';
-import { AuthService } from "./services/auth.service";
+//import { AuthService } from "./services/auth.service";
 
 
 @NgModule({
@@ -61,7 +61,7 @@ import { AuthService } from "./services/auth.service";
     FooterComponent,
     AboutusComponent,
     PlantsComponent,
-    AddProductComponent
+    //AddProductComponent
   ],
   imports: [
     BrowserModule,
@@ -79,7 +79,7 @@ import { AuthService } from "./services/auth.service";
     provide: HTTP_INTERCEPTORS,
     useClass: AuthInterceptor,
     multi: true
-  },AuthGuard,UserService,DeliverService,ValidateService,AuthService],
+  },AuthGuard,UserService,DeliverService],
   // declarations:[AppComponent],
   bootstrap: [AppComponent]
 })

@@ -17,7 +17,7 @@ import { AdminSignupComponent } from './admin-signup/admin-signup.component';
 import { DeliverDetailsComponent } from './deliver-details/deliver-details.component';
 import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
-import { AddProductComponent } from './add-product/add-product.component';
+//import { AddProductComponent } from './add-product/add-product.component';
 
 const routes: Routes = [
   {
@@ -82,11 +82,6 @@ const routes: Routes = [
 {
   path: 'aboutus',
   component: AboutusComponent
-
-},
-{
-  path: 'add-product',
-  component: AddProductComponent
 
 }
 ];
