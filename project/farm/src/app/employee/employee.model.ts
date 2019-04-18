@@ -6,4 +6,5 @@ export class Employee {
     contact: number;
     gender: string;
     nic: number;
+    password:number;
 }

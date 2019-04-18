@@ -30,6 +30,7 @@ router.post('/', (req, res) => {
         contact: req.body.contact,
         gender: req.body.gender,
         nic: req.body.nic,
+        password:req.body.password,
     });
     emp.save((err, doc) => {
         if (!err) { res.send(doc); }
@@ -48,6 +49,7 @@ router.put('/:id', (req, res) => {
         contact: req.body.contact,
         gender: req.body.gender,
         nic: req.body.nic,
+        password:req.body.password,
     };
     Employee.findByIdAndUpdate(req.params.id, { $set: emp }, { new: true }, (err, doc) => {
         if (!err) { res.send(doc); }
