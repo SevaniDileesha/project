@@ -30,7 +30,8 @@ export class AdminSignupComponent implements OnInit {
       address: "",
       contact: null,
       gender:"",
-      nic:null
+      nic:null,
+      password:null
     }
   }
 

@@ -62,6 +62,7 @@ import { AuthService } from "./services/auth.service";
     AboutusComponent,
     PlantsComponent,
     AddProductComponent
+
   ],
   imports: [
     BrowserModule,

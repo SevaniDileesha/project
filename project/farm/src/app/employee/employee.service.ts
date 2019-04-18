@@ -31,4 +31,8 @@ export class EmployeeService {
   deleteEmployee(_id: string) {
     return this.http.delete(this.baseURL + `/${_id}`);
   }
+
+  login(emp: Employee) {
+  return this.http.get(this.baseURL);
+  }
 }
