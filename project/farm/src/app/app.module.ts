@@ -37,7 +37,10 @@ import { ReactiveFormsModule } from '@angular/forms';
 import {DeliverService } from './deliver/deliver.service';
 
 import { PlantsComponent } from './plants/plants.component';
-import { WorkersComponent } from './workers/workers.component';
+import { AddProductComponent } from './add-product/add-product.component';
+import { ValidateService } from './services/validate.service'
+import {FlashMessagesModule} from 'angular2-flash-messages';
+import { AuthService } from "./services/auth.service";
 
 
 @NgModule({
@@ -58,7 +61,8 @@ import { WorkersComponent } from './workers/workers.component';
     FooterComponent,
     AboutusComponent,
     PlantsComponent,
-    WorkersComponent
+    AddProductComponent
+
   ],
   imports: [
     BrowserModule,
@@ -66,7 +70,8 @@ import { WorkersComponent } from './workers/workers.component';
     RouterModule,
     HttpClientModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FlashMessagesModule.forRoot()
     //AgmCoreModule.forRoot({
       //apiKey: 'YOUR_KEY'
     //})
@@ -75,7 +80,7 @@ import { WorkersComponent } from './workers/workers.component';
     provide: HTTP_INTERCEPTORS,
     useClass: AuthInterceptor,
     multi: true
-  },AuthGuard,UserService,DeliverService],
+  },AuthGuard,UserService,DeliverService,ValidateService,AuthService],
   // declarations:[AppComponent],
   bootstrap: [AppComponent]
 })
