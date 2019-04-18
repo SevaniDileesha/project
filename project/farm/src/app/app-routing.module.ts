@@ -18,6 +18,7 @@ import { DeliverDetailsComponent } from './deliver-details/deliver-details.compo
 import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
 //import { AddProductComponent } from './add-product/add-product.component';
+import { WorkersComponent } from './workers/workers.component';
 
 
 const routes: Routes = [
@@ -86,8 +87,8 @@ const routes: Routes = [
 
 },
 {
-  path: 'add-product',
-  component: AddProductComponent
+  path: 'workers',
+  component: WorkersComponent
 }
 ];
 
