@@ -65,7 +65,6 @@ import { WorkersComponent } from './workers/workers.component';
     //AddProductComponent
     //AddProductComponent
     WorkersComponent
-
   ],
   imports: [
     BrowserModule,
