@@ -42,6 +42,7 @@ import { PlantsComponent } from './plants/plants.component';
 import {FlashMessagesModule} from 'angular2-flash-messages';
 //import { AuthService } from "./services/auth.service";
 import { WorkersComponent } from './workers/workers.component';
+import { SideBarComponent } from './side-bar/side-bar.component';
 
 
 @NgModule({
@@ -64,7 +65,8 @@ import { WorkersComponent } from './workers/workers.component';
     PlantsComponent,
     //AddProductComponent
     //AddProductComponent
-    WorkersComponent
+    WorkersComponent,
+    SideBarComponent
   ],
   imports: [
     BrowserModule,
