@@ -35,9 +35,11 @@ import { FooterComponent } from './footer/footer.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import {DeliverService } from './deliver/deliver.service';
+import {ProductService } from './product/product.service';
+
 
 import { PlantsComponent } from './plants/plants.component';
-//import { AddProductComponent } from './add-product/add-product.component';
+import { AddProductComponent } from './add-product/add-product.component';
 //import { ValidateService } from './services/validate.service'
 import {FlashMessagesModule} from 'angular2-flash-messages';
 //import { AuthService } from "./services/auth.service";
@@ -62,7 +64,7 @@ import { WorkersComponent } from './workers/workers.component';
     FooterComponent,
     AboutusComponent,
     PlantsComponent,
-    //AddProductComponent
+    AddProductComponent,
     //AddProductComponent
     WorkersComponent
 
@@ -83,7 +85,7 @@ import { WorkersComponent } from './workers/workers.component';
     provide: HTTP_INTERCEPTORS,
     useClass: AuthInterceptor,
     multi: true
-  },AuthGuard,UserService,DeliverService],
+  },AuthGuard,UserService,DeliverService,ProductService],
   // declarations:[AppComponent],
   bootstrap: [AppComponent]
 })

@@ -17,7 +17,7 @@ import { AdminSignupComponent } from './admin-signup/admin-signup.component';
 import { DeliverDetailsComponent } from './deliver-details/deliver-details.component';
 import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
-//import { AddProductComponent } from './add-product/add-product.component';
+import { AddProductComponent } from './add-product/add-product.component';
 import { WorkersComponent } from './workers/workers.component';
 
 
@@ -89,6 +89,10 @@ const routes: Routes = [
 {
   path: 'workers',
   component: WorkersComponent
+},
+{
+  path: 'addproduct',
+  component: AddProductComponent
 }
 ];
 

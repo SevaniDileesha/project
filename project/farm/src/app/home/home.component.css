@@ -35,3 +35,14 @@
     color: #2196F3;
     display: block;
   }
+ 
+  .card-img-top img{
+    max-height:150px;
+  }
+
+  .price{
+    font-weight:bold;
+    font-size: 16px;
+  }
+
+  
