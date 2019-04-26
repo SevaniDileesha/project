@@ -44,6 +44,10 @@ import { AddProductComponent } from './add-product/add-product.component';
 import {FlashMessagesModule} from 'angular2-flash-messages';
 //import { AuthService } from "./services/auth.service";
 import { WorkersComponent } from './workers/workers.component';
+//import { SlimLoadingBarModule } from 'ng2-slim-loading-bar';
+import { CartComponent } from './cart/cart.component';
+import { FileSelectDirective } from 'ng2-file-upload';
+import { ProductDetailsComponent } from './product-details/product-details.component';
 
 
 @NgModule({
@@ -66,7 +70,10 @@ import { WorkersComponent } from './workers/workers.component';
     PlantsComponent,
     AddProductComponent,
     //AddProductComponent
-    WorkersComponent
+    WorkersComponent,
+    CartComponent,
+    FileSelectDirective,
+    ProductDetailsComponent
 
   ],
   imports: [
@@ -77,6 +84,8 @@ import { WorkersComponent } from './workers/workers.component';
     AppRoutingModule,
     ReactiveFormsModule,
     FlashMessagesModule.forRoot()
+    //Response
+    //SlimLoadingBarModule
     //AgmCoreModule.forRoot({
       //apiKey: 'YOUR_KEY'
     //})

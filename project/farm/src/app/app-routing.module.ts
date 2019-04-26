@@ -19,6 +19,9 @@ import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { AddProductComponent } from './add-product/add-product.component';
 import { WorkersComponent } from './workers/workers.component';
+import { CartComponent } from './cart/cart.component';
+import { ProductDetailsComponent } from './product-details/product-details.component';
+
 
 
 const routes: Routes = [
@@ -73,8 +76,8 @@ const routes: Routes = [
   component: DeliverDetailsComponent 
 },
 {
-  path: 'cart',
-  component: DeliverDetailsComponent 
+  path: 'addimage',
+  component: CartComponent
 },
 {
   path: 'shoppingcart',
@@ -93,7 +96,12 @@ const routes: Routes = [
 {
   path: 'addproduct',
   component: AddProductComponent
+},
+{
+  path: 'productdetails',
+  component: ProductDetailsComponent
 }
+
 ];
 
 @NgModule({
