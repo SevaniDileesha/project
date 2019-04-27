@@ -24,7 +24,7 @@ mongoose = require('mongoose')
 const rtsIndex = require('./routes/index.router');
 const deliver_detailRoute = require('./routes/deliver_detail.router');//
 const productRoute = require('./routes/product.router');
-const imageRoute = require('./routes/image.router');
+
 
 /*mongoose.Promise = global.Promise;
 mongoose.connect(config.DB, { useNewUrlParser: true }).then(
@@ -70,8 +70,7 @@ app.use(passport.initialize());
 app.use('/api', rtsIndex);
 app.use('/deliverdetails', deliver_detailRoute);//
 app.use('/addproduct',  productRoute);//
-app.set('view engine', 'ejs');//
-app.use('/addimage', imageRoute);//
+app.set('view engine', 'ejs');//app.use('/addimage', imageRoute);//
 
 // error handler
 app.use((err, req, res, next) => {
