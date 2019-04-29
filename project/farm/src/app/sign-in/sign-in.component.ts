@@ -37,7 +37,7 @@ export class SignInComponent implements OnInit {
         this.serverErrorMessages = err.error.message;
       }
     );
-    this.employeeService.login(form.value).subscribe(
+    /*this.employeeService.login(form.value).subscribe(
       res => {
         //this.employeeService.setToken(res['token']);
         this.router.navigateByUrl('/workers');
@@ -45,7 +45,7 @@ export class SignInComponent implements OnInit {
       err => {
         this.serverErrorMessages = err.error.message;
       }
-    );
+    );*/
   }
 
 }

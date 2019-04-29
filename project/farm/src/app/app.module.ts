@@ -48,6 +48,7 @@ import { WorkersComponent } from './workers/workers.component';
 import { CartComponent } from './cart/cart.component';
 import { FileSelectDirective } from 'ng2-file-upload';
 import { ProductDetailsComponent } from './product-details/product-details.component';
+import { SlickCarouselModule } from 'ngx-slick-carousel';
 
 
 @NgModule({
@@ -83,7 +84,11 @@ import { ProductDetailsComponent } from './product-details/product-details.compo
     HttpClientModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    FlashMessagesModule.forRoot()
+    FlashMessagesModule.forRoot(),
+    SlickCarouselModule,
+    //FormBuilder,
+    //FormGroup,
+    //Validators
     //Response
     //SlimLoadingBarModule
     //AgmCoreModule.forRoot({

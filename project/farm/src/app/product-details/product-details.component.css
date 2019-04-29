@@ -1,3 +1,13 @@
+.animsition-loading-1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
 .flex-c-m {
 	justify-content: center;
 	-ms-align-items: center;
@@ -9,6 +19,15 @@
 .wrap-pic-w img {width: 100%;
     display: block;
 }
+
+.wrap-pic-w img {width: 100%;}
+.wrap-pic-max-w img {max-width: 100%;}
+
+.wrap-pic-h img {height: 100%;}
+.wrap-pic-max-h img {max-height: 100%;}
+
+.wrap-pic-s img {width: 100%; height: 100%;}
+.wrap-pic-max-s img {max-width: 100%; max-height: 100%;}
 
 .flex-c-m {
 	justify-content: center;
@@ -66,4 +85,254 @@
 	display: -moz-box;
 	display: -ms-flexbox;
 	display: flex;
-}  
+} 
+
+.wrap-slick3-arrows {
+  position: absolute;
+  z-index: 100;
+  width: 83.333333%;
+  right: 0;
+  top: calc(50% - 20px);
+}
+
+.wrap-modal1 {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 9000;
+  overflow: auto;
+
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+
+  visibility: hidden;
+  opacity: 0;
+}
+
+.p-t-60, .p-tb-60, .p-all-60 {padding-top: 60px;}
+.p-b-20, .p-tb-20, .p-all-20 {padding-bottom: 20px;}
+.overlay-modal1 {
+  position: fixed;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #000;
+  opacity: 0.8;
+}
+
+.bg0 {background-color: #fff;}
+
+.p-b-30, .p-tb-30, .p-all-30 {padding-bottom: 30px;}
+.p-lr-15-lg {padding-left: 15px; padding-right: 15px;}
+.how-pos3-parent {
+  position: relative;
+}
+
+.how-pos3 {
+  position: absolute;
+  top: -35px;
+  right: 0px;
+}
+
+.hov3 {
+  opacity: 0.6;
+}
+
+.hov3:hover {
+  opacity: 1;
+}
+
+.trans-04 {
+	-webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+.wrap-slick3 {
+  position: relative;
+}
+
+/*---------------------------------------------*/
+.wrap-slick3-arrows {
+  position: absolute;
+  z-index: 100;
+  width: 83.333333%;
+  right: 0;
+  top: calc(50% - 20px);
+}
+
+.arrow-slick3 {
+  font-size: 25px;
+  color: #fff;
+  
+  position: absolute;
+  top: 0;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(0,0,0,0.5);
+
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+.arrow-slick3 {
+  font-size: 25px;
+  color: #fff;
+  
+  position: absolute;
+  top: 0;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(0,0,0,0.5);
+
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.arrow-slick3:hover {
+  background-color: rgba(0,0,0,0.9);
+}
+
+.prev-slick3 {left: 0px;}
+.next-slick3 {right: 0px;}
+
+/*---------------------------------------------*/
+.wrap-slick3-dots {
+  width: 11.111111%;
+}
+
+.slick3 {
+  width: 83.333333%;
+}
+
+.slick3-dots li {
+  display: block;
+  position: relative;
+  width: 100%;
+  margin-bottom: 27px;
+}
+
+.slick3-dots li img {
+  width: 100%;
+}
+
+.slick3-dot-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  border: 2px solid transparent;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.slick3-dot-overlay:hover {
+  border-color: #ccc;
+}
+
+.slick3-dots .slick-active .slick3-dot-overlay {
+  border-color: #ccc;
+}
+
+.size-108 {
+  width: 40px;
+  height: 40px;
+}
+
+.how-pos1 {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.bor0 {border-radius: 50%;}
+.cl10 {color: #1d1d1d;}
+.bg0 {background-color: #fff;}
+.hov-btn3:hover {
+  border-color: #717fe0;
+  background-color: #717fe0;
+  color: #fff;
+}
+
+.hov-btn3:hover i {
+  color: #fff;
+}
+.trans-04 {
+	-webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+}
+.slick1-dots li.slick-active .caption-dots-slick1 {
+  opacity: 1;
+}
+.slick3-dots .slick-active .slick3-dot-overlay {
+  border-color: #ccc;
+}
+.container {max-width: 1380px;}
+
+@media (max-width: 1600px) {
+  .container {max-width: 1200px;}
+}
+button.mfp-close {
+  width: 75px !important;
+  height: 58px !important;
+  line-height: 44px;
+  position: fixed;
+  right: 0;
+  top: 0;
+  color: transparent !important;
+  background-position: center center;
+  background-repeat: no-repeat;
+  cursor: pointer !important;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.mfp-fade.mfp-bg {
+  opacity: 0;
+
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+/* overlay animate in */
+.mfp-fade.mfp-bg.mfp-ready {
+  opacity: 0.9;
+}
+/* overlay animate out */
+.mfp-fade.mfp-bg.mfp-removing {
+  opacity: 0;
+}
+
+/* content at start */
+.mfp-fade.mfp-wrap .mfp-content {
+  opacity: 0;
+
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+/* content animate it */
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+  opacity: 1;
+}
+/* content animate out */
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+  opacity: 0;
+}
