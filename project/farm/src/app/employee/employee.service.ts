@@ -32,7 +32,7 @@ export class EmployeeService {
     return this.http.delete(this.baseURL + `/${_id}`);
   }
 
-  login(emp: Employee) {
-  return this.http.get(this.baseURL);
+  login() {
+    return this.http.get(this.baseURL);
   }
 }
