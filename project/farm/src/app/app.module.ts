@@ -51,8 +51,10 @@ import { ProductDetailsComponent } from './product-details/product-details.compo
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AdminpanelComponent } from './adminpanel/adminpanel.component';
-import { MatGridListModule, MatCardModule, MatMenuModule, MatIconModule, MatButtonModule } from '@angular/material';
+import { MatGridListModule, MatCardModule, MatMenuModule, MatIconModule, MatButtonModule, MatToolbarModule, MatSidenavModule, MatListModule, MatTableModule, MatPaginatorModule, MatSortModule } from '@angular/material';
 import { LayoutModule } from '@angular/cdk/layout';
+import { AdminpanelnavComponent } from './adminpanelnav/adminpanelnav.component';
+import { AdminpaneltableComponent } from './adminpaneltable/adminpaneltable.component';
 
 
 @NgModule({
@@ -79,7 +81,9 @@ import { LayoutModule } from '@angular/cdk/layout';
     CartComponent,
     FileSelectDirective,
     ProductDetailsComponent,
-    AdminpanelComponent
+    AdminpanelComponent,
+    AdminpanelnavComponent,
+    AdminpaneltableComponent
 
   ],
   imports: [
@@ -98,6 +102,12 @@ import { LayoutModule } from '@angular/cdk/layout';
     MatIconModule,
     MatButtonModule,
     LayoutModule,
+    MatToolbarModule,
+    MatSidenavModule,
+    MatListModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule,
     //FormBuilder,
     //FormGroup,
     //Validators
