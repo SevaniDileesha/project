@@ -5,6 +5,7 @@ import { Router } from "@angular/router";
 import { UserService } from '../shared/user.service';
 import { EmployeeService } from '../employee/employee.service';
 import { Employee } from '../employee/employee.model';
+import { formArrayNameProvider } from '@angular/forms/src/directives/reactive_directives/form_group_name';
 
 @Component({
   selector: 'app-sign-in',
@@ -27,25 +28,28 @@ export class SignInComponent implements OnInit {
     this.router.navigateByUrl('/userprofile');
   }
 
-  onSubmit(form : NgForm){
-    this.userService.login(form.value).subscribe(
-      res => {
-        this.userService.setToken(res['token']);
-        this.router.navigateByUrl('/home');
-      },
-      err => {
-        this.serverErrorMessages = err.error.message;
-      }
-    );
-    this.employeeService.login(form.value).subscribe(
-      res => {
-        //this.employeeService.setToken(res['token']);
-        this.router.navigateByUrl('/workers');
-      },
-      err => {
-        this.serverErrorMessages = err.error.message;
-      }
-    );
+  onSubmit(employeeForm : NgForm,signInForm:NgForm){
+    if(employeeForm.value.gender == "sfs"){
+      this.employeeService.login().subscribe(
+        res => {
+          //this.employeeService.setToken(res['token']);
+          this.router.navigateByUrl('/workers');
+        },
+        err => {
+          this.serverErrorMessages = err.error.message;
+        }
+      );
+    }else{
+      this.userService.login(signInForm.value).subscribe(
+        res => {
+          this.userService.setToken(res['token']);
+          this.router.navigateByUrl('/home');
+        },
+        err => {
+          this.serverErrorMessages = err.error.message;
+        }
+      );
+    
   }
-
+  }
 }
