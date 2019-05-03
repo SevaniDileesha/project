@@ -2,31 +2,39 @@
   <a class="navbar-brand" href="http://localhost:4200">Dream Flowers</a>
   <div class="navbar-expand mr-auto">
     <div class="container-fluid">
-    <div class="navbar-nav">
-      
-      <a class="nav-item" routerLink="/home" class="nav-link" routerLinkActive="active">Home</a>
-      <a class="nav-item" routerLink="/contact" class="nav-link" routerLinkActive="active">Contact</a>
-      <a class="nav-item" routerLink="/login" class="nav-link" routerLinkActive="active">Login</a>
-      <a class="nav-item" routerLink="/signup" class="nav-link" routerLinkActive="active">Register</a>
+      <div class="navbar-nav">
+          <a class="nav-item" routerLink="/home" class="nav-link" routerLinkActive="active">Home</a>
+          <a class="nav-item" routerLink="/contact" class="nav-link" routerLinkActive="active">Contact</a>
+          <a class="nav-item" routerLink="/login" class="nav-link" routerLinkActive="active">Login</a>
+          <a class="nav-item" routerLink="/signup" class="nav-link" routerLinkActive="active">Register</a>
+          
+      </div>
+    </div>
+  </div>
+  <div style="float:right">
+    <div class="navbar-expand mr-auto">
+      <div class="container-fluid">
+        <div class="navbar-nav">
+          <a class="nav-item" class="nav-link" routerLink="/home"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Shopping Cart</a>
+          <div class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            User Management
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#"><i class="fa fa-user" aria-hidden="true"></i>User Account</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Logout</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    
-      
-    </div>
-    </div>
-  </div>
-  <div class="navbar-expand ml-auto navbar-nav">
-    <div class="navbar-nav">
-      <a class="nav-item nav-link" href="" target="_blank">
-        <i class="fa fa-github"></i>
-      </a>
-      <a class="nav-item nav-link" href="" target="_blank">
-        <i class="fa fa-twitter"></i>
-      </a>
-      <a class="nav-item nav-link" href="" target="_blank">
-        <i class="fa fa-medium"></i>
-      </a>
-    </div>
-  </div>
+ 
+
+
+
 </nav>
 
 <!--<app-header></app-header>

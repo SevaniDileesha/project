@@ -49,6 +49,9 @@ import { CartComponent } from './cart/cart.component';
 import { FileSelectDirective } from 'ng2-file-upload';
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
+//import { AngularFontAwesomeModule } from 'angular-font-awesome';
+//import { MDBBootstrapModule } from 'angular-bootstrap-md';
+
 
 
 @NgModule({
@@ -85,7 +88,9 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
     AppRoutingModule,
     ReactiveFormsModule,
     FlashMessagesModule.forRoot(),
-    SlickCarouselModule,
+    SlickCarouselModule
+    //AngularFontAwesomeModule
+    //MDBBootstrapModule.forRoot()
     //FormBuilder,
     //FormGroup,
     //Validators

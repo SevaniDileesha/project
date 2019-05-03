@@ -12,7 +12,7 @@ const jwtHelper = require('../config/jwtHelper');
 
 productRoute.route('/add').post(function (req, res) {
     let product = new Product(req.body);
-    let product=fs.readFileSync(req.file.path);
+   // let product=fs.readFileSync(req.file.path);
     product.save()
       .then(product => {
         res.status(200).json({'business': 'business in added successfully'});
