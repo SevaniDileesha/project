@@ -52,6 +52,12 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
 //import { AngularFontAwesomeModule } from 'angular-font-awesome';
 //import { MDBBootstrapModule } from 'angular-bootstrap-md';
 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AdminpanelComponent } from './adminpanel/adminpanel.component';
+import { MatGridListModule, MatCardModule, MatMenuModule, MatIconModule, MatButtonModule, MatToolbarModule, MatSidenavModule, MatListModule, MatTableModule, MatPaginatorModule, MatSortModule } from '@angular/material';
+import { LayoutModule } from '@angular/cdk/layout';
+import { AdminpanelnavComponent } from './adminpanelnav/adminpanelnav.component';
+import { AdminpaneltableComponent } from './adminpaneltable/adminpaneltable.component';
 
 
 @NgModule({
@@ -77,7 +83,10 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
     WorkersComponent,
     CartComponent,
     FileSelectDirective,
-    ProductDetailsComponent
+    ProductDetailsComponent,
+    AdminpanelComponent,
+    AdminpanelnavComponent,
+    AdminpaneltableComponent
 
   ],
   imports: [
@@ -88,9 +97,22 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
     AppRoutingModule,
     ReactiveFormsModule,
     FlashMessagesModule.forRoot(),
-    SlickCarouselModule
     //AngularFontAwesomeModule
     //MDBBootstrapModule.forRoot()
+    SlickCarouselModule,
+    BrowserAnimationsModule,
+    MatGridListModule,
+    MatCardModule,
+    MatMenuModule,
+    MatIconModule,
+    MatButtonModule,
+    LayoutModule,
+    MatToolbarModule,
+    MatSidenavModule,
+    MatListModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule,
     //FormBuilder,
     //FormGroup,
     //Validators
