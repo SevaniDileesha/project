@@ -13,7 +13,8 @@ export class UserService {
   selectedUser: User = {
     fullName: '',
     email: '',
-    password: ''
+    password: '',
+    confirmPassword:''
     //role:''
   }; 
 

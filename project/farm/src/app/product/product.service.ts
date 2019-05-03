@@ -7,6 +7,8 @@ import{environment} from '../../environments/environment';
 })
 export class ProductService {
   uri = 'http://localhost:3000/addproduct';
+  uri1 = 'http://localhost:3000/addimage';
+
   constructor(private http: HttpClient) { }
 
   addProduct(product_name,product_img,product_description,product_price,product_category) {
@@ -18,7 +20,23 @@ export class ProductService {
       product_category:product_category
     };
     console.log(obj);
-    this.http.post(environment.apiBaseUrl3+'/addproduct', obj)
+    this.http.post(`${this.uri}/add`, obj)
         .subscribe(res => console.log('Done'));
   }
+
+  addimg(image) {
+    const obj = {
+     image:image
+    };
+    console.log(obj);
+    this.http.post('http://localhost:3000/addimage'+'/post', obj)
+        .subscribe(res => console.log('Done'));
+  }
+  getProducts() {
+    return this
+           .http
+           .get(`${this.uri}`);
+  }
+
+
 }

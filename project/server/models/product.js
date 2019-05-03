@@ -17,8 +17,7 @@ let AddProduct = new Schema({
         type:String
     },
     product_Category: {
-        type: String,
-        required: true
+        type: String
     }
     
 },{
