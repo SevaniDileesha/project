@@ -21,8 +21,7 @@ import { AddProductComponent } from './add-product/add-product.component';
 import { WorkersComponent } from './workers/workers.component';
 import { CartComponent } from './cart/cart.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
-
-
+import { AdminpanelComponent } from './adminpanel/adminpanel.component';
 
 const routes: Routes = [
   {
@@ -100,6 +99,10 @@ const routes: Routes = [
 {
   path: 'productdetails',
   component: ProductDetailsComponent
+},
+{
+  path: 'adminpanel',
+  component: AdminpanelComponent
 }
 
 ];

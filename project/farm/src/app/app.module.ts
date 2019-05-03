@@ -49,6 +49,10 @@ import { CartComponent } from './cart/cart.component';
 import { FileSelectDirective } from 'ng2-file-upload';
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AdminpanelComponent } from './adminpanel/adminpanel.component';
+import { MatGridListModule, MatCardModule, MatMenuModule, MatIconModule, MatButtonModule } from '@angular/material';
+import { LayoutModule } from '@angular/cdk/layout';
 
 
 @NgModule({
@@ -74,7 +78,8 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
     WorkersComponent,
     CartComponent,
     FileSelectDirective,
-    ProductDetailsComponent
+    ProductDetailsComponent,
+    AdminpanelComponent
 
   ],
   imports: [
@@ -86,6 +91,13 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
     ReactiveFormsModule,
     FlashMessagesModule.forRoot(),
     SlickCarouselModule,
+    BrowserAnimationsModule,
+    MatGridListModule,
+    MatCardModule,
+    MatMenuModule,
+    MatIconModule,
+    MatButtonModule,
+    LayoutModule,
     //FormBuilder,
     //FormGroup,
     //Validators
