@@ -20,7 +20,7 @@
 <div class="row">
   <div class="col-sm-6 col-md-4"  *ngFor="let addproduct of products">
     <div class="card mb-4 box-shadow">
-      <img class="card-img-top" src="../../../assets/img/img4.jpg" alt="Card image cap" class="img-responsive">
+      <img class="card-img-top" src={{addproduct.product_img}} alt="Card image cap" class="img-responsive">
       <div class="card-body">
         <div class="caption">
           <h3>{{addproduct.product_name }}</h3>
