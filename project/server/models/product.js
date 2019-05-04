@@ -1,27 +1,33 @@
 const mongoose = require('mongoose');
-const config = require('../config/database');
+//const config = require('../config/database');
+const Schema = mongoose.Schema;
 
 // User Schema
-const productSchema = mongoose.Schema({
-    name: {
+let AddProduct = new Schema({
+    product_name: {
         type: String
     },
-    img:{
+    product_img:{
         type:String
     },
-    description:{
+    product_description:{
         type:String
     },
-    Catag: {
-        type: String,
-        required: true
+    product_price:{
+        type:String
     },
+    product_Category: {
+        type: String
+    }
+    
+},{
+        collection: 'addproduct'
 });
 
 
-const Product = module.exports = mongoose.model('Product', productSchema);
+module.exports = mongoose.model('AddProduct', AddProduct);
 
-module.exports.addProduct = function (newProduct, callback) {
+/*module.exports.addProduct = function (newProduct, callback) {
     newProduct.save(callback);
        
 }
@@ -36,4 +42,4 @@ module.exports.removeProduct = function (productID, callback) {
     const query = { _id: productID };
     Product.remove(query, callback);
 
-}
+}*/

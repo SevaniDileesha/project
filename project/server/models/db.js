@@ -7,3 +7,5 @@ mongoose.connect(process.env.MONGODB_URI, (err) => {
 
 require('./user.model');
 require('./deliver_detail');
+require('./product');
+require('./image');

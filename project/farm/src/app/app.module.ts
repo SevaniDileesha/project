@@ -25,7 +25,7 @@ import { HomeComponent } from './home/home.component';
 import { ContactusComponent } from './contactus/contactus.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 
-import { AdminComponent } from './admin/admin.component';
+
 import { CheckoutComponent } from './checkout/checkout.component';
 import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
 import { AdminSignupComponent } from './admin-signup/admin-signup.component';
@@ -35,14 +35,33 @@ import { FooterComponent } from './footer/footer.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import {DeliverService } from './deliver/deliver.service';
+import {ProductService } from './product/product.service';
+
 
 import { PlantsComponent } from './plants/plants.component';
-//import { AddProductComponent } from './add-product/add-product.component';
+import { AddProductComponent } from './add-product/add-product.component';
 //import { ValidateService } from './services/validate.service'
 import {FlashMessagesModule} from 'angular2-flash-messages';
 //import { AuthService } from "./services/auth.service";
 import { WorkersComponent } from './workers/workers.component';
+
 import { SideBarComponent } from './side-bar/side-bar.component';
+
+//import { SlimLoadingBarModule } from 'ng2-slim-loading-bar';
+import { CartComponent } from './cart/cart.component';
+import { FileSelectDirective } from 'ng2-file-upload';
+import { ProductDetailsComponent } from './product-details/product-details.component';
+import { SlickCarouselModule } from 'ngx-slick-carousel';
+//import { AngularFontAwesomeModule } from 'angular-font-awesome';
+//import { MDBBootstrapModule } from 'angular-bootstrap-md';
+
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AdminpanelComponent } from './adminpanel/adminpanel.component';
+import { MatGridListModule, MatCardModule, MatMenuModule, MatIconModule, MatButtonModule, MatToolbarModule, MatSidenavModule, MatListModule, MatTableModule, MatPaginatorModule, MatSortModule } from '@angular/material';
+import { LayoutModule } from '@angular/cdk/layout';
+import { AdminpanelnavComponent } from './adminpanelnav/adminpanelnav.component';
+import { AdminpaneltableComponent } from './adminpaneltable/adminpaneltable.component';
+
 
 
 @NgModule({
@@ -53,7 +72,6 @@ import { SideBarComponent } from './side-bar/side-bar.component';
     SignInComponent,
     HomeComponent,
     ContactusComponent,
-    AdminComponent,
     DashboardComponent,
     CheckoutComponent,
     ShoppingCartComponent,
@@ -63,10 +81,17 @@ import { SideBarComponent } from './side-bar/side-bar.component';
     FooterComponent,
     AboutusComponent,
     PlantsComponent,
+    AddProductComponent,
     //AddProductComponent
     //AddProductComponent
+    SideBarComponent,
     WorkersComponent,
-    SideBarComponent
+    CartComponent,
+    FileSelectDirective,
+    ProductDetailsComponent,
+    AdminpanelComponent,
+    AdminpanelnavComponent,
+    AdminpaneltableComponent
   ],
   imports: [
     BrowserModule,
@@ -75,7 +100,28 @@ import { SideBarComponent } from './side-bar/side-bar.component';
     HttpClientModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    FlashMessagesModule.forRoot()
+    FlashMessagesModule.forRoot(),
+    //AngularFontAwesomeModule
+    //MDBBootstrapModule.forRoot()
+    SlickCarouselModule,
+    BrowserAnimationsModule,
+    MatGridListModule,
+    MatCardModule,
+    MatMenuModule,
+    MatIconModule,
+    MatButtonModule,
+    LayoutModule,
+    MatToolbarModule,
+    MatSidenavModule,
+    MatListModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule,
+    //FormBuilder,
+    //FormGroup,
+    //Validators
+    //Response
+    //SlimLoadingBarModule
     //AgmCoreModule.forRoot({
       //apiKey: 'YOUR_KEY'
     //})
@@ -84,7 +130,7 @@ import { SideBarComponent } from './side-bar/side-bar.component';
     provide: HTTP_INTERCEPTORS,
     useClass: AuthInterceptor,
     multi: true
-  },AuthGuard,UserService,DeliverService],
+  },AuthGuard,UserService,DeliverService,ProductService],
   // declarations:[AppComponent],
   bootstrap: [AppComponent]
 })

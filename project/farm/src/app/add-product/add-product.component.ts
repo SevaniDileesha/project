@@ -1,8 +1,12 @@
-/*import { Component, OnInit } from '@angular/core';
-import { ValidateService } from '../services/validate.service'
-import { FlashMessagesService } from 'angular2-flash-messages';
-import { AuthService } from "../services/auth.service";
+import { Component, OnInit } from '@angular/core';
+//import { ValidateService } from '../services/validate.service'
+//import { FlashMessagesService } from 'angular2-flash-messages';
+//import { AuthService } from "../services/auth.service";
 import { Router } from "@angular/router";
+import { FormGroup,  FormBuilder,  Validators } from '@angular/forms';
+import {ProductService } from '../product/product.service';
+
+
 
 @Component({
   selector: 'app-add-product',
@@ -11,51 +15,31 @@ import { Router } from "@angular/router";
 })
 export class AddProductComponent implements OnInit {
 
-  name: String;
-  img: String;
-  description: String;
-  Catag: String;
+  angForm: FormGroup;
+  constructor(private fb: FormBuilder,private ds: ProductService) {
+    this.createForm();
+  }
 
-  constructor(private validateService: ValidateService, private flashMessage: FlashMessagesService,
-    private authservice: AuthService,
-    private router: Router) { }
+  createForm() {
+    this.angForm = this.fb.group({
+      product_name: ['', Validators.required ],
+      product_img: ['', Validators.required ],
+      product_description: ['', Validators.required ],
+      product_price: ['', Validators.required ],
+      product_category: ['', Validators.required ]
+    });
+  }
+
+  addProduct(product_name,product_img,product_description,product_price,product_category) {
+    this.ds.addProduct(product_name,product_img,product_description,product_price,product_category);
+  }
 
   ngOnInit() {
   }
 
-  onProductSubmit() {
-    const product = {
-      name: this.name,
-      img: this.img,
-      description: this.description,
-      Catag: this.Catag
-    }
-
-    // Required Fields
-    if (!this.validateService.validateProduct(product)) {
-      this.flashMessage.show('Please fill in all fields', { cssClass: 'alert-danger', timeout: 3000 });
-      return false;
-    }
-
   
-
-    this.authservice.addProduct(product).subscribe(data => {
-      if (data.success) {
-        this.flashMessage.show('Successfully Added', { cssClass: 'alert-success', timeout: 3000 });
-        this.router.navigate(['/add-product']);
-      } else {
-        this.flashMessage.show('Something went wrong', { cssClass: 'alert-danger', timeout: 3000 });
-        this.router.navigate(['/add-product']);
-      }
-    });
-    this.name="";
-    this.description="";
-    this.Catag="";
-    this.img="";
-
-  }
 
 }
 
 
-}*/
+
