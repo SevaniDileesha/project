@@ -1,3 +1,4 @@
+
 <mat-sidenav-container class="sidenav-container">
   <mat-sidenav #drawer class="sidenav" fixedInViewport="true"
       [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
@@ -11,7 +12,7 @@
         <a mat-list-item [routerLink]="['/adminsiginup']">Manage employees</a>
         <a mat-list-item [routerLink]="['/plants']">Manage plants</a>
       <a mat-list-item [routerLink]="['/plants']">View History</a>
-      <a mat-list-item [routerLink]="['/plants']">Manage plants Stock </a>
+      
      
     </mat-nav-list>
 
@@ -47,3 +48,4 @@
 
 
 </mat-sidenav-content>
+</mat-sidenav-container>
