@@ -1,81 +1,94 @@
-<div class="row">
-    <div class="col s12">
-        <div class="card3">
-            <div class="card-content white-text">
-                <div class="row">
-                    <div class="col s5">
-                        <form #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)">
-                            <br>
-                            <br>
-                            <h3 class="title text-center">Contact Us Now</h3>
-                            <p style="text-align:center">contact us for more information an any of our listed services
-                                or products and we shall get back to you at earliest </p>
-                            <br>
-                            <br>
-                            <input type="hidden" name="_id" #_id="ngModel"
-                                [(ngModel)]="contactService.selectedContact._id">
-                            <div class="row">
-                                <div class="input-field col s12">
-                                    <input type="text" name="name" #name="ngModel"
-                                        [(ngModel)]="contactService.selectedContact.name" placeholder="Full Name"
-                                        required>
+<div class="row" style="margin-top: 30px;">
+       
+   
+        <div style="margin-left: 300px;" class="col s6">
+            <div class="card3">
+                <div class="card-content white-text">
+                    <div class="row">
+                        <div class="col s5">
+                            <form #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)" >
+                                <br>
+                                <br>
+                                <h3 class="title text-center">Contact Us Now</h3>
+                                <p style="text-align:center">contact us for more information an any of our listed
+                                    services
+                                    or products and we shall get back to you at earliest </p>
+                                <br>
+                                <br>
+                                <input type="hidden" name="_id" #_id="ngModel"
+                                    [(ngModel)]="contactService.selectedContact._id">
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <input type="text" name="name" #name="ngModel"
+                                            [(ngModel)]="contactService.selectedContact.name" placeholder="Full Name"
+                                            required>
 
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="row">
-                                <div class="input-field col s12">
-                                    <input type="text" name="email" #name="ngModel"
-                                        [(ngModel)]="contactService.selectedContact.email" placeholder=" Email ">
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <input type="text" name="email" #name="ngModel"
+                                            [(ngModel)]="contactService.selectedContact.email" placeholder=" Email ">
 
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="input-field col s12">
-                                    <input type="text" name="contactn" #name="ngModel"
-                                        [(ngModel)]="contactService.selectedContact.contactn" placeholder="Contact No">
-
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="input-field col s12">
-                                    <input type="text" name="comment" #name="ngModel"
-                                        [(ngModel)]="contactService.selectedContact.comment"
-                                        placeholder="Comments your idea">
-
+                                    </div>
                                 </div>
 
-                            </div>
-                        </form>
-                        <button class="btn btn-primary right"  type="submit" >Submit</button>
-                        <button class="btn btn-danger right"  type="reset" >Cancel</button>
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <input type="text" name="contactn" #name="ngModel"
+                                            [(ngModel)]="contactService.selectedContact.contactn"
+                                            placeholder="Contact No">
+
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <input type="text" name="comment" #name="ngModel"
+                                            [(ngModel)]="contactService.selectedContact.comment"
+                                            placeholder="Comments your idea">
+
+                                    </div>
+
+                                </div>
+                            </form>
+                            <button style="margin-top: -25px;" class="btn btn-primary right" type="submit">Submit</button>
+                            <button style="margin-top: -25px;" class="btn btn-danger right" type="reset">Cancel</button>
+                           
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</div>
-
-<div class="row">
-    <div class="col-md-6 ">
-        <div class="card text-white bg-danger o-hidden h-76 ">
-            <div class="card-body ">
-                <h3 >Business Address</h3>
-                <span class="far fa-address-card" aria-hidden="true" style="color:white; font-size:16px">: N0.35,
-                    Welimada, Bandarawela</span><br>
-                <span class="fas fa-mobile-alt" aria-hidden="true" style="color:white;  font-size:16px">:
-                    +94111234567</span><br>
-                <span class="far fa-envelope" aria-hidden="true" style="color:white; font-size:16px">:
-                    harshani.ur@gmail.com</span><br>
-            </div>
-        </div>
-        <br>
-        <!--<div class="card text-white bg-danger o-hidden h-50">
-            <agm-map [latitude]="lat" [longitude]="lng">
-                <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
-              </agm-map>
-            </div>-->
 
     </div>
-</div>
+
+    <div class="row">
+            <div class="col-md-3">
+                   
+        
+                </div>
+                <div class="col-md-9" style="padding-right: 50px;">
+                        <div class="card text-white bg-danger o-hidden h-76 ">
+                            <div class="card-body ">
+                                <h3>Business Address</h3>
+                                <span class="far fa-address-card" aria-hidden="true" style="color:white; font-size:16px">: N0.35,
+                                    Welimada, Bandarawela</span><br>
+                                <span class="fas fa-mobile-alt" aria-hidden="true" style="color:white;  font-size:16px">:
+                                    +94111234567</span><br>
+                                <span class="far fa-envelope" aria-hidden="true" style="color:white; font-size:16px">:
+                                    harshani.ur@gmail.com</span><br>
+                            </div>
+                        </div>
+                        <br>
+                        <br>
+                        <br>
+
+                        <!--<div class="card text-white bg-danger o-hidden h-50">
+                        <agm-map [latitude]="lat" [longitude]="lng">
+                            <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+                          </agm-map>
+                        </div>-->
+            
+                    </div>
+    </div>
