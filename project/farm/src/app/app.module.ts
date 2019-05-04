@@ -44,6 +44,9 @@ import { AddProductComponent } from './add-product/add-product.component';
 import {FlashMessagesModule} from 'angular2-flash-messages';
 //import { AuthService } from "./services/auth.service";
 import { WorkersComponent } from './workers/workers.component';
+
+import { SideBarComponent } from './side-bar/side-bar.component';
+
 //import { SlimLoadingBarModule } from 'ng2-slim-loading-bar';
 import { CartComponent } from './cart/cart.component';
 import { FileSelectDirective } from 'ng2-file-upload';
@@ -57,6 +60,7 @@ import { AdminpanelComponent } from './adminpanel/adminpanel.component';
 import { MatGridListModule, MatCardModule, MatMenuModule, MatIconModule, MatButtonModule, MatToolbarModule, MatSidenavModule, MatListModule, MatTableModule, MatPaginatorModule, MatSortModule } from '@angular/material';
 import { LayoutModule } from '@angular/cdk/layout';
 import { AdminpanelnavComponent } from './adminpanelnav/adminpanelnav.component';
+
 
 
 
@@ -79,13 +83,14 @@ import { AdminpanelnavComponent } from './adminpanelnav/adminpanelnav.component'
     PlantsComponent,
     AddProductComponent,
     //AddProductComponent
+    //AddProductComponent
+    SideBarComponent,
     WorkersComponent,
     CartComponent,
     FileSelectDirective,
     ProductDetailsComponent,
     AdminpanelComponent,
     AdminpanelnavComponent
-
   ],
   imports: [
     BrowserModule,

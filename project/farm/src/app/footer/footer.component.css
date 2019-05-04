@@ -1,13 +1,15 @@
 .page-footer{
-    //position: fixed;
+    /* //position: fixed; */
     background-color:#7283a7;
     width: 100%;
     height: 300px;
-    //border-color:#337ab7;
+    /* //border-color:#337ab7;
     //color: #FFFFFF;
-    //color:white;
+    //color:white; */
+    margin-left:285px;
     
-   }
+}
+
 .container{
    color:white;
    
