@@ -1,0 +1,27 @@
+
+.sidenav {
+  
+    width: 300px;
+    /* position: fixed; */
+    /* z-index: 1; */
+    height: 100%;
+    top: 20px;
+    left: 300px;
+    background: #333333;
+    overflow-x: hidden;
+    padding: 8px 0;
+  }
+  
+  .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 19px;
+    color: #2196F3;
+    display: block;
+  }
+
+
+#pill{
+  color: white;
+}

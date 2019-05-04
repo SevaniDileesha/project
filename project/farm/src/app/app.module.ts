@@ -25,7 +25,7 @@ import { HomeComponent } from './home/home.component';
 import { ContactusComponent } from './contactus/contactus.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 
-import { AdminComponent } from './admin/admin.component';
+
 import { CheckoutComponent } from './checkout/checkout.component';
 import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
 import { AdminSignupComponent } from './admin-signup/admin-signup.component';
@@ -44,6 +44,9 @@ import { AddProductComponent } from './add-product/add-product.component';
 import {FlashMessagesModule} from 'angular2-flash-messages';
 //import { AuthService } from "./services/auth.service";
 import { WorkersComponent } from './workers/workers.component';
+
+import { SideBarComponent } from './side-bar/side-bar.component';
+
 //import { SlimLoadingBarModule } from 'ng2-slim-loading-bar';
 import { CartComponent } from './cart/cart.component';
 import { FileSelectDirective } from 'ng2-file-upload';
@@ -60,6 +63,7 @@ import { AdminpanelnavComponent } from './adminpanelnav/adminpanelnav.component'
 import { AdminpaneltableComponent } from './adminpaneltable/adminpaneltable.component';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -68,7 +72,6 @@ import { AdminpaneltableComponent } from './adminpaneltable/adminpaneltable.comp
     SignInComponent,
     HomeComponent,
     ContactusComponent,
-    AdminComponent,
     DashboardComponent,
     CheckoutComponent,
     ShoppingCartComponent,
@@ -80,6 +83,8 @@ import { AdminpaneltableComponent } from './adminpaneltable/adminpaneltable.comp
     PlantsComponent,
     AddProductComponent,
     //AddProductComponent
+    //AddProductComponent
+    SideBarComponent,
     WorkersComponent,
     CartComponent,
     FileSelectDirective,
@@ -87,7 +92,6 @@ import { AdminpaneltableComponent } from './adminpaneltable/adminpaneltable.comp
     AdminpanelComponent,
     AdminpanelnavComponent,
     AdminpaneltableComponent
-
   ],
   imports: [
     BrowserModule,

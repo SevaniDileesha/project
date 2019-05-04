@@ -29,19 +29,8 @@ export class SignInComponent implements OnInit {
   }
 
 
-  onSubmit(employeeForm : NgForm,signInForm:NgForm){
-    if(employeeForm.value.gender == "sfs"){
-      this.employeeService.login().subscribe(
-        res => {
-          //this.employeeService.setToken(res['token']);
-          this.router.navigateByUrl('/workers');
-        },
-        err => {
-          this.serverErrorMessages = err.error.message;
-        }
-      );
-    }else{
-      this.userService.login(signInForm.value).subscribe(
+  onSubmit(form:NgForm){
+      this.userService.login(form.value).subscribe(
         res => {
           this.userService.setToken(res['token']);
           this.router.navigateByUrl('/home');
@@ -51,6 +40,6 @@ export class SignInComponent implements OnInit {
         }
       );
     
-  }
+  
   }
 }

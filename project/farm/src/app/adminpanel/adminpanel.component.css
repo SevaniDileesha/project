@@ -1,13 +1,18 @@
 .grid-container {
-  margin: 20px;
+  margin: 30px;
+  top: 15px;
+  left: 2px;
+  right: 2px;
+  bottom: 15px;
 }
 
 .dashboard-card {
   position: absolute;
   top: 15px;
-  left: 15px;
-  right: 15px;
+  left: 2px;
+  right: 2px;
   bottom: 15px;
+  background-color: blueviolet;
 }
 
 .more-button {
@@ -19,3 +24,40 @@
 .dashboard-card-content {
   text-align: center;
 }
+
+.sidenav-container {
+  height: 100%;
+  bottom: 15px;
+  
+}
+
+.sidenav {
+  background: inherit;
+  top: 15px;
+  background-color: #083045;
+  
+}
+
+.sidenav .mat-toolbar {
+  background: inherit;
+  bottom: 15px;
+  background-color: #508499;
+  -webkit-text-fill-color: aliceblue;
+  
+}
+
+.sidenav .mat-toolbar .mat-nav-list{
+  position: absolute;
+  bottom: 15px;
+  text-shadow: -1px -1px 1px #eef0f1(228, 31, 31, 0.1);
+  font-style: normal;
+}
+
+.mat-toolbar.mat-primary {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  text-shadow: -1px -1px 1px #eef0f1(228, 31, 31, 0.1);
+  bottom: 15px;
+}
+
