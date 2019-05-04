@@ -1,5 +1,23 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #drawer class="sidenav" fixedInViewport="true"
+      [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+      [mode]="(isHandset$ | async) ? 'over' : 'side'"
+      [opened]="!(isHandset$ | async)">
+      <br>
+      <br>
+      <br>
+    <mat-toolbar>Menu</mat-toolbar>
+    <mat-nav-list>
+      <a mat-list-item href="#">Link 1</a>
+      <a mat-list-item href="#">Link 2</a>
+      <a mat-list-item href="#">Link 3</a>
+    </mat-nav-list>
 
+  </mat-sidenav>
 
+   
+  
+<mat-sidenav-content>
 <div class="grid-container">
   <h1 class="mat-h1">Admin Panel</h1>
   <mat-grid-list cols="2" rowHeight="350px">
@@ -24,3 +42,8 @@
     </mat-grid-tile>
   </mat-grid-list>
 </div>
+  <!-- Add Content Here -->
+</mat-sidenav-content>
+</mat-sidenav-container>
+
+
