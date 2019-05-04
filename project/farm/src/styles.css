@@ -426,8 +426,8 @@ input.ng-invalid.ng-dirty{
 
 div.card1{
   background-color : #083045;
-  border-radius: 8px;
   height: 800px;
+  background-image: url(/../../assets/img/f1.jpg);
 }
 
 div.card3{

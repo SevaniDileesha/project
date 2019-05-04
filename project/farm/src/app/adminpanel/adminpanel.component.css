@@ -1,9 +1,9 @@
 .grid-container {
   margin: 30px;
   top: 15px;
-  left: 2px;
-  right: 2px;
   bottom: 15px;
+  
+  background-size:contain;
 }
 
 .dashboard-card {
@@ -13,6 +13,8 @@
   right: 2px;
   bottom: 15px;
   background-color: blueviolet;
+  background-image: url(/../../assets/img/f1.jpg);
+ 
 }
 
 .more-button {
@@ -26,7 +28,6 @@
 }
 
 .sidenav-container {
-  height: 100%;
   bottom: 15px;
   
 }
