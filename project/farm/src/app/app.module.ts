@@ -60,6 +60,8 @@ import { AdminpanelComponent } from './adminpanel/adminpanel.component';
 import { MatGridListModule, MatCardModule, MatMenuModule, MatIconModule, MatButtonModule, MatToolbarModule, MatSidenavModule, MatListModule, MatTableModule, MatPaginatorModule, MatSortModule } from '@angular/material';
 import { LayoutModule } from '@angular/cdk/layout';
 import { AdminpanelnavComponent } from './adminpanelnav/adminpanelnav.component';
+import { DistributerComponent } from './distributer/distributer.component';
+import { WorkerprofileComponent } from './workerprofile/workerprofile.component';
 
 
 
@@ -89,7 +91,9 @@ import { AdminpanelnavComponent } from './adminpanelnav/adminpanelnav.component'
     FileSelectDirective,
     ProductDetailsComponent,
     AdminpanelComponent,
-    AdminpanelnavComponent
+    AdminpanelnavComponent,
+    DistributerComponent,
+    WorkerprofileComponent
   ],
   imports: [
     BrowserModule,

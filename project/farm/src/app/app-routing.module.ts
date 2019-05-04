@@ -21,6 +21,8 @@ import { WorkersComponent } from './workers/workers.component';
 import { CartComponent } from './cart/cart.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { AdminpanelComponent } from './adminpanel/adminpanel.component';
+import { DistributerComponent } from './distributer/distributer.component';
+import { WorkerprofileComponent } from './workerprofile/workerprofile.component';
 
 const routes: Routes = [
   {
@@ -97,7 +99,17 @@ const routes: Routes = [
 {
   path: 'adminpanel',
   component: AdminpanelComponent
+},
+{
+  path: 'distributer',
+  component: DistributerComponent
+  
+},
+{
+  path: 'workerprofile',
+  component: WorkerprofileComponent
 }
+
 
 ];
 
