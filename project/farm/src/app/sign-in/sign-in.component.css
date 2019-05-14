@@ -53,9 +53,10 @@
     color: #c5322d;
   }
 
-  .login_box_area .login_box_img {
+  .login_box_area  {
     margin-right: -30px;
     position: relative;
+    color: #c5322d;
   }
   
   .login_box_area .login_box_img .hover {
@@ -138,7 +139,7 @@
   .login_form .form-group input {
     height: 54px;
     border: none;
-    border-bottom: 1px solid #cccccc;
+    border-bottom: 1px solid #7e2f2f;
     border-radius: 0px;
     outline: none;
     -webkit-box-shadow: none;
