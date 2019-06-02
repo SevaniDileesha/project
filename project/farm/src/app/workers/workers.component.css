@@ -34,14 +34,14 @@
   .sidenav {
     background: inherit;
     top: 15px;
-    background-color: #083045;
+    background-color: #edf1f3;
     
   }
   
   .sidenav .mat-toolbar {
     background: inherit;
     bottom: 15px;
-    background-color: #508499;
+    background-color: #0b0c0c;
     -webkit-text-fill-color: aliceblue;
     
   }
