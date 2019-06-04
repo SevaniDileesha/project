@@ -1,4 +1,3 @@
-
 <mat-sidenav-container class="sidenav-container">
   <mat-sidenav #drawer class="sidenav" fixedInViewport="true"
       [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
@@ -9,19 +8,21 @@
       <br>
     <mat-toolbar>Menu</mat-toolbar>
     <mat-nav-list>
-        <a mat-list-item [routerLink]="['/adminsiginup']">Manage employees</a>
-        <a mat-list-item [routerLink]="['/plants']">Manage plants</a>
-      <a mat-list-item [routerLink]="['/plants']">View History</a>
-      
+        <a mat-list-item [routerLink]="['/adminsiginup']">Manage Profile</a>
+      <a mat-list-item [routerLink]="['/plants']">Check deliver orders</a>
+      <a mat-list-item [routerLink]="['/plants']">Check Vehicle Temperature</a>
      
+
     </mat-nav-list>
 
   </mat-sidenav>
 
-   
-  
 <mat-sidenav-content>
 <div class="grid-container">
+  <br>
+  <br>
+  <br>
+  <br>
   <h1 class="mat-h1">Admin Panel</h1>
   <mat-grid-list cols="2" rowHeight="350px">
     <mat-grid-tile *ngFor="let card of cards | async" [colspan]="card.cols" [rowspan]="card.rows">
@@ -48,4 +49,6 @@
 
 
 </mat-sidenav-content>
-</mat-sidenav-container>
+
+
+
