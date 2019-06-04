@@ -25,9 +25,13 @@
             User Management
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#"><i class="fa fa-user" aria-hidden="true"></i>User Account</a>
+             
+              <a  *ngIf="userService.isLoggedIn()" [routerLinkActive]="['active']" class="dropdown-item" routerLink="/userprofile"><i class="fa fa-user" aria-hidden="true"></i>User Account</a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Logout</a>
+              <a  *ngIf="userService.isLoggedIn()" [routerLinkActive]="['active']" class="dropdown-item" (click)="onLogout()">Logout</a>
+              <a *ngIf="!userService.isLoggedIn()" [routerLinkActive]="['active']" class="dropdown-item" routerLink="/login">SignIn</a>
+              <a *ngIf="!userService.isLoggedIn()" [routerLinkActive]="['active']" class="dropdown-item" routerLink="/signup">SignUp</a>
+            
             </div>
           </div>
         </div>
@@ -36,11 +40,7 @@
     </div>
   </div>
 
- 
-
-
-
-</nav>
+ </nav>
 
 <!--<app-header></app-header>
 <div class="container">
